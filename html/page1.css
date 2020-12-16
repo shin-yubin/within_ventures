@@ -1,172 +1,3 @@
-brand__recruitment* {
-  width: 100%;
-  height: auto;
-}
-
-body {
-  -ms-overflow-style: none;
-  margin: 0 auto;
-}
-h3 {
-  font-family: NotoSansKR;
-  font-size: 3.625em;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.1;
-  letter-spacing: normal;
-  text-align: left;
-  color: #231815;
-  margin: 0px;
-  margin-bottom: 87px;
-}
-h5 {
-  font-family: NotoSansKR;
-  font-size: 1.813em;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.72;
-  letter-spacing: normal;
-  text-align: left;
-  color: #444444;
-  margin: 0;
-  margin-bottom: 1.625em;
-}
-p {
-  font-family: NotoSansKR;
-  font-size: 1.813em;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.72;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
-  margin: 0;
-  margin-bottom: 1.813em;
-}
-::-webkit-scrollbar {
-  display: none;
-}
-
-.header {
-  width: 100vw;
-  height: 7.916666666666667%; /*7.125em;*/
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.header__logo {
-  display: inline-flex;
-  align-content: center;
-  margin-left: 3.25em;
-  width: auto;
-  background-color: rgba(0, 0, 255, 0);
-}
-.header__logo--image {
-  width: 4.875em;
-  height: 50px;
-  margin: 0 3.125em 0 0;
-  background-color: rgba(0, 0, 255, 0);
-  margin-top: 2.063em;
-  background-image: url(img/logo_image.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.header__logo--text {
-  width: 12.813em;
-  height: 1em;
-  opacity: 0.51;
-  background-color: rgba(0, 0, 255, 0);
-  margin-top: 3em;
-  background-image: url(img/logo_txt.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.header__nav {
-  display: inline-flex;
-  justify-content: flex-end;
-  align-content: center;
-  margin-right: 3.25em;
-}
-.header__nav ul {
-  display: inline-flex;
-  width: 31.819em;
-  list-style: none;
-  justify-content: space-between;
-  align-content: center;
-  text-align: center;
-  margin: 41px 0;
-}
-.header__nav button {
-  width: 6.813em;
-  height: 1.919em;
-  opacity: 0.34;
-  border-radius: 0.956em;
-  border: solid 1px #606060;
-  font-family: NotoSansKR;
-  font-size: 18px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  margin-top: -7px;
-  letter-spacing: normal;
-  text-align: center;
-  color: #606060;
-}
-/*�ㅻ뜑�ㅻ퉬寃뚯씠��*/
-
-.header__content--wrap {
-  width: 100vw;
-  height: 90em;
-  background-image: url(img/page1_front.jpg);
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center center;
-  position: relative;
-}
-/*�ㅻ뜑諛곌꼍*/
-.header__content--image--text {
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 235px;
-  margin-top: 327px;
-}
-/*�ㅻ뜑 而⑦뀗痢� �댁슜*/
-.header__content--button button {
-  width: 198px;
-  height: 69px;
-  font-family: NotoSansKR;
-  font-size: 29px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.72;
-  letter-spacing: normal;
-  text-align: left;
-  color: white;
-  background-color: black;
-  border-radius: 40px;
-  padding: 0 10px 0 10px;
-  margin: 0;
-  margin-bottom: 327px;
-  text-align: center;
-  margin-right: 3em;
-}
-
-.footer__wrap {
-  width: 100vw;
-  height: 392.3px;
-  background-color: #000000;
-  color: white;
-}
 /*肄섑뀗痢�*/
 .content__wrap {
   width: 100vw;
@@ -434,4 +265,49 @@ footer {
   100% {
     width: 100%;
   }
+}
+.recruitment__icon--wrap {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-left: 230px;
+}
+* {
+  width: 100%;
+  height: auto;
+}
+div {
+  display: block;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.cbrand_identity h3 {
+  margin-top: 230px;
+  /* margin-left: 239px; */
+}
+.cbrand_identity p {
+  margin-top: 77px;
+  margin-left: 235px;
+}
+.brand__recruitment {
+  width: 1500px;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.G-wrap {
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.graph__wrap {
+  display: grid;
+  grid-template-areas: 'm g g .';
+}
+.g-wrap {
+  margin-left: 300px;
 }
