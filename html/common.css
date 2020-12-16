@@ -151,9 +151,16 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 235px;
-  margin-top: 327px;
+  margin-left: 60%;
+  margin-top: 8%;
 }
+.header__descripton h3 {
+  color: white;
+}
+.header__descripton h3 span {
+  color: yellow;
+}
+
 /*�ㅻ뜑 而⑦뀗痢� �댁슜*/
 .header__descripton-button button {
   width: 198px;
@@ -529,74 +536,7 @@ footer {
   background-color: aqua;
   text-align: center;
 }
-.G-wrap {
-  width: 90%;
-  height: auto;
-  background-color: #fff;
-}
-.graph__money {
-  grid-area: m;
-}
-.graph__money2 {
-  margin-top: 4rem;
-}
-.graph__wrap {
-  display: grid;
-  grid-template-areas: 'm g g g';
-}
-.graph {
-  grid-area: g;
-  height: 50px;
-  background: #fff;
-  border-radius: 40px;
-  margin-bottom: 5rem;
-  width: 500px;
-}
 
-.graph span {
-  display: block;
-  height: 40px;
-  line-height: 40px;
-  text-align: right;
-  background: dodgerblue;
-  border-radius: 40px;
-  box-sizing: border-box;
-  color: black;
-  animation: stack1 2s 1;
-}
-.stack1 span {
-  animation: stack1 2s 1;
-  width: 27%;
-}
-.stack2 span {
-  animation: stack2 2s 1;
-  width: 100%;
-}
-
-@keyframes stack1 {
-  0% {
-    width: 100%;
-    color: rgba(255, 255, 255, 0);
-  }
-  50% {
-    color: rgba(0, 0, 0, 1);
-  }
-  100% {
-    width: 27%;
-  }
-}
-@keyframes stack2 {
-  0% {
-    width: 0%;
-    color: rgba(255, 255, 255, 0);
-  }
-  50% {
-    color: rgba(0, 0, 0, 1);
-  }
-  100% {
-    width: 100%;
-  }
-}
 .brand_identity {
   width: 100vw;
   height: 100vh;
@@ -646,6 +586,52 @@ footer {
   height: 100px;
   background-color: #3197ee;
   margin-bottom: 10px;
+  text-align: center;
+}
+.graph span {
+  display: block;
+  height: 50px;
+  line-height: 40px;
+  text-align: right;
+  background: dodgerblue;
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: black;
+  animation: stack1 2s 1;
+}
+.stack1 span {
+  animation: stack1 2s 1;
+  width: 27%;
+}
+.stack2 span {
+  animation: stack2 2s 1;
+  width: 100%;
+  margin-top: 4.5rem;
+}
+
+@keyframes stack1 {
+  0% {
+    width: 100%;
+    color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    color: rgba(0, 0, 0, 1);
+  }
+  100% {
+    width: 27%;
+  }
+}
+@keyframes stack2 {
+  0% {
+    width: 0%;
+    color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    color: rgba(0, 0, 0, 1);
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .G-wrap {
@@ -655,44 +641,59 @@ footer {
   align-content: center;
 }
 .g-wrap {
-  height: 1080px;
   width: 70%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
+.graph__money {
+  grid-area: m;
+}
+.graph__money2 {
+  margin-top: 4rem;
+}
+
 .graph__wrap {
   display: grid;
-  width: 100%;
-  grid-template-areas: 'l . .' 'm g g' 'm g g ' 'd d d';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .g-wrap {
   margin-left: 300px;
 }
 .graph__logo {
   text-align: left;
-  grid-area: l;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 .graph__money {
-  grid-area: m;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
 }
 .graph {
-  grid-area: g;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-self: start;
+  width: 100%;
+  display: inline-block;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 5;
 }
-.graph__wrap p {
-  display: block;
-  font-size: 1em;
+.discription__text {
+  font-size: 12px;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
 }
-.g-wrap .discription {
-  grid-area: d;
-  width: 1000px;
-  display: flex;
+.discription__button button {
+  display: inline-block;
 }
+
 .content__icon--wrap {
   display: flex;
   justify-content: center;
@@ -727,4 +728,44 @@ footer {
 }
 .application_acceptance--info p {
   margin-left: 234px;
+}
+.brand_branding {
+  width: 100vw;
+  height: 100vh;
+}
+.brand_branding__title {
+  height: 20%;
+  width: 100%;
+  background-color: #fff;
+}
+.brand_branding__slider {
+  height: 40%;
+  width: 100%;
+  background-color: blue;
+}
+.brand_branding__link {
+  height: 40%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.box_container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+.blue-box {
+  width: 300px;
+  height: 200px;
+  justify-content: center;
+  text-align: center;
+  background-color: cornflowerblue;
 }
