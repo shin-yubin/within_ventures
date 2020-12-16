@@ -35,19 +35,20 @@ content {
   flex-direction: column;
   align-content: center;
   background-color: #fff;
+  width: 70vw;
 }
 .brand__recruitment h3 {
   margin-top: 230px;
-  margin-left: 239px;
+ 
 }
 .brand__recruitment p {
   margin-top: 77px;
-  margin-left: 235px;
+
 }
 
 .recruitment__icon-container {
   display: grid;
-  width: 70%;
+  width: 90%;
   justify-content: space-around;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -198,80 +199,12 @@ footer {
   flex-direction: row;
 }
 
-.G-wrap {
-  width: 90%;
-  height: auto;
-
-  background-color: #fff;
-}
-.graph__money {
-  grid-area: m;
-}
-.graph__money2 {
-  margin-top: 4rem;
-}
-.graph__wrap {
-  display: grid;
-  grid-template-areas: 'm g g g';
-}
-.graph {
-  grid-area: g;
-  height: 40px;
-  background: #fff;
-  border-radius: 40px;
-  margin-bottom: 5rem;
-}
-
-.graph span {
-  display: block;
-  height: 40px;
-  line-height: 40px;
-  text-align: right;
-  background: dodgerblue;
-  border-radius: 40px;
-  box-sizing: border-box;
-  color: black;
-  animation: stack1 2s 1;
-}
-.stack1 span {
-  animation: stack1 2s 1;
-  width: 27%;
-}
-.stack2 span {
-  animation: stack2 2s 1;
-  width: 100%;
-}
-
-@keyframes stack1 {
-  0% {
-    width: 100%;
-    color: rgba(255, 255, 255, 0);
-  }
-  50% {
-    color: rgba(0, 0, 0, 1);
-  }
-  100% {
-    width: 27%;
-  }
-}
-@keyframes stack2 {
-  0% {
-    width: 0%;
-    color: rgba(255, 255, 255, 0);
-  }
-  50% {
-    color: rgba(0, 0, 0, 1);
-  }
-  100% {
-    width: 100%;
-  }
-}
 .recruitment__icon--wrap {
   display: flex;
   justify-content: center;
   width: 70%;
-  margin-left: 230px;
 }
+
 * {
   width: 100%;
   height: auto;
@@ -282,13 +215,12 @@ div {
 ::-webkit-scrollbar {
   display: none;
 }
-.cbrand_identity h3 {
+.brand_identity h3 {
   margin-top: 230px;
   /* margin-left: 239px; */
 }
-.cbrand_identity p {
+.brand_identity p {
   margin-top: 77px;
-  margin-left: 235px;
 }
 .brand__recruitment {
   width: 1500px;
@@ -308,6 +240,4 @@ div {
   display: grid;
   grid-template-areas: 'm g g .';
 }
-.g-wrap {
-  margin-left: 300px;
-}
+

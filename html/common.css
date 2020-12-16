@@ -478,3 +478,253 @@ footer {
   );
   flex-direction: row;
 }
+
+.brand__recruitment--container {
+  background-image: url(img/page1_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.brand__recruitment {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  background-color: #fff;
+  width: 50vw;
+}
+.brand__recruitment h3 {
+  display: flex;
+  justify-content: center;
+}
+.brand__recruitment p {
+  margin-top: 10px;
+  text-align: center;
+}
+.recruitment__icon--wrap {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.recruitment__icon-container {
+  display: grid;
+  width: 90%;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.recruitment__icon-container .icon {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  margin-bottom: 20px;
+  background-color: aqua;
+  text-align: center;
+}
+.G-wrap {
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+}
+.graph__money {
+  grid-area: m;
+}
+.graph__money2 {
+  margin-top: 4rem;
+}
+.graph__wrap {
+  display: grid;
+  grid-template-areas: 'm g g g';
+}
+.graph {
+  grid-area: g;
+  height: 50px;
+  background: #fff;
+  border-radius: 40px;
+  margin-bottom: 5rem;
+  width: 500px;
+}
+
+.graph span {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  background: dodgerblue;
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: black;
+  animation: stack1 2s 1;
+}
+.stack1 span {
+  animation: stack1 2s 1;
+  width: 27%;
+}
+.stack2 span {
+  animation: stack2 2s 1;
+  width: 100%;
+}
+
+@keyframes stack1 {
+  0% {
+    width: 100%;
+    color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    color: rgba(0, 0, 0, 1);
+  }
+  100% {
+    width: 27%;
+  }
+}
+@keyframes stack2 {
+  0% {
+    width: 0%;
+    color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    color: rgba(0, 0, 0, 1);
+  }
+  100% {
+    width: 100%;
+  }
+}
+.brand_identity {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/cloud.jpg);
+  display: flex;
+}
+.brand_identity__container {
+  width: 50%;
+  height: 100vh;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-right: 60%;
+}
+.brand_identity__container h3 {
+  margin-top: 50%;
+}
+
+.brand_membership {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/marble.jpg);
+  display: flex;
+}
+.brand_membership__container {
+  width: 65%;
+  height: 100vh;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+  margin-left: 35%;
+}
+.brand_membership__container h3 {
+  margin-top: 20%;
+}
+.icon__membership__container {
+  display: grid;
+  width: 70%;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.icon__membership {
+  width: 100px;
+  height: 100px;
+  background-color: #3197ee;
+  margin-bottom: 10px;
+}
+
+.G-wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+}
+.g-wrap {
+  height: 1080px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.graph__wrap {
+  display: grid;
+  width: 100%;
+  grid-template-areas: 'l . .' 'm g g' 'm g g ' 'd d d';
+}
+.g-wrap {
+  margin-left: 300px;
+}
+.graph__logo {
+  text-align: left;
+  grid-area: l;
+}
+.graph__money {
+  grid-area: m;
+}
+.graph {
+  grid-area: g;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
+.graph__wrap p {
+  display: block;
+  font-size: 1em;
+}
+.g-wrap .discription {
+  grid-area: d;
+  width: 1000px;
+  display: flex;
+}
+.content__icon--wrap {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 281px;
+}
+
+.content__icon--wrap .icon {
+  width: 126px;
+  padding-top: 200px;
+  height: 230px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
+.content__move-in-procedure h3 {
+  margin-top: 230px;
+  margin-left: 239px;
+}
+.content__move-in-procedure p {
+  margin-top: 77px;
+  margin-left: 235px;
+}
+
+.content__application_acceptance {
+  margin-top: 1px;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+}
+.application_acceptance--info h3 {
+  margin-left: 238px;
+}
+.application_acceptance--info p {
+  margin-left: 234px;
+}
