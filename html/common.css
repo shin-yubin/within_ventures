@@ -134,7 +134,7 @@ body {
   -ms-overflow-style: none;
   margin: 0 auto;
 }
-h3 {
+.header__descripton h3 {
   font-family: NotoSansKR;
   font-size: 3.625em;
   font-weight: 900;
@@ -146,6 +146,17 @@ h3 {
   color: #231815;
   margin: 0px;
   margin-bottom: 87px;
+}
+h3 {
+  font-family: NotoSansKR;
+  font-size: 63px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.05;
+  letter-spacing: normal;
+  text-align: left;
+  color: #606060;
 }
 h5 {
   font-family: NotoSansKR;
@@ -170,9 +181,20 @@ p {
   letter-spacing: normal;
   text-align: left;
   color: #000000;
-  margin: 0;
-  margin-bottom: 1.813em;
 }
+
+.G-wrap h3 {
+  font-family: NotoSansKR;
+  font-size: 63px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #606060;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -203,7 +225,7 @@ p {
 .header__logo--image {
   width: 4.875em;
   height: 50px;
-  margin: 0 3.125em 0 0;
+
   background-color: rgba(0, 0, 255, 0);
   margin-top: 2.063em;
   background-image: url(img/logo_image.png);
@@ -226,6 +248,15 @@ p {
   justify-content: flex-end;
   align-content: center;
   margin-right: 3.25em;
+  opacity: 0.57;
+  font-family: NotoSansKR;
+  font-size: 20.3px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #606060;
 }
 .header__nav ul {
   display: inline-flex;
@@ -273,7 +304,7 @@ p {
 }
 
 /*header_content background*/
-.header__descripton {
+.header__descripton.page1 {
   position: absolute;
   z-index: 2;
   display: flex;
@@ -282,11 +313,44 @@ p {
   margin-left: 60%;
   margin-top: 8%;
 }
-.header__descripton h3 {
-  color: white;
+
+.header__descripton {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 235px;
+  margin-top: 327px;
 }
-.header__descripton h3 span {
-  color: yellow;
+.header__descripton h2 {
+  color: white;
+  font-family: NotoSansKR;
+  font-size: 61.2px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.02;
+  letter-spacing: normal;
+  text-align: left;
+  color: inherit;
+}
+
+.header__descripton.page1 h2 {
+  color: white;
+  font-family: NotoSansKR;
+  font-size: 61.2px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.02;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.header__descripton.page1 h2 span {
+  color: #efe23f;
 }
 
 /*�ㅻ뜑 而⑦뀗痢� �댁슜*/
@@ -382,10 +446,10 @@ hr {
   align-content: space-around;
 }
 .application_acceptance__info h3 {
-  margin-left: 238px;
+  /* margin-left: 238px;*/
 }
 .application_acceptance__info p {
-  margin-left: 234px;
+  /* margin-left: 234px;*/
 }
 .content__application_acceptance {
   display: flex;
@@ -622,6 +686,21 @@ hr {
   margin-top: 10px;
   text-align: center;
 }
+.brand__recruitment span {
+  width: 308px;
+  height: 28px;
+  margin: 106.6px 5.7px 33.5px 0.2px;
+  opacity: 0.35;
+  font-family: NotoSansKR;
+  font-size: 20.9px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
 .recruitment__icon--wrap {
   display: flex;
   justify-content: center;
@@ -853,20 +932,35 @@ hr {
   height: 100vh;
 }
 .brand_branding__title {
-  height: 20%;
   width: 100%;
   background-color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 5% 0 3% 0;
+  align-items: flex-end;
+  margin-left: 300px;
 }
 .brand_branding__title h3 {
-  padding-right: 20%;
 }
 .brand_branding__title span {
-  font-size: 2rem;
+  font-family: NotoSansKR;
+  font-size: 31px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  text-align: left;
+  color: #606060;
+  padding-right: 500px;
+}
+
+.brand_branding__title h3 {
+}
+.brand_branding__title p {
 }
 .brand_branding__slider {
-  height: 40%;
+  height: 35%;
   width: 100%;
   background-color: blue;
 }
@@ -888,7 +982,15 @@ hr {
   justify-content: center;
   text-align: center;
   margin: 10px;
-  font-size: 2rem;
+  font-family: NotoSansKR;
+  font-size: 47.2px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.02;
+  letter-spacing: normal;
+  text-align: center;
+  color: #606060;
 }
 .blue-box {
   width: 300px;
@@ -897,6 +999,11 @@ hr {
   text-align: center;
   background-color: cornflowerblue;
   margin-top: 10px;
+  width: 302.4px;
+  height: 201.6px;
+
+  opacity: 0.52;
+  background-color: #52c3dd;
 }
 
 .brand_branding__button {
@@ -924,4 +1031,16 @@ hr {
   padding: 0 10px 0 10px;
   margin: 0;
   text-align: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  /* You may also want to try adding:*/
+  margin: 0;
+  padding: 0;
 }
