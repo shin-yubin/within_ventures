@@ -960,14 +960,22 @@ move-in-procedure {
 .blue-box {
   width: 18.75rem;
   height: 12.5rem;
+  display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: cornflowerblue;
   margin-top: 0.625rem;
   width: 18.9rem;
   height: 12.6rem;
   opacity: 0.52;
   background-color: #52c3dd;
+}
+.blue-box a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 2.35rem;
+  line-height: 1.53;
 }
 
 .brand_branding__button {
