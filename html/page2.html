@@ -66,10 +66,8 @@
         align-items: center;
         justify-content: center;
       }
-      #footer {
-        height: 400px;
-      }
-      .disagree {
+
+      .disr1 {
         margin-left: 200px;
       }
       html {
@@ -84,33 +82,64 @@
     <div class="section">
       <div class="header__wrap">
         <div class="header">
-          <div class="header__logo">
-            <div
-              class="header__logo--image"
-            ></div>
-            <div
-              class="header__logo--text"
-            ></div>
-          </div>
-          <div class="header__nav">
-            <ul>
-              <li>입주업종</li>
-              <li>공간</li>
-              <li>
-                <button>
-                  <a href="page3.html">
-                    입점 문의</a
+          <div
+            class="header__align-items"
+          >
+            <div class="header__logo">
+              <span>
+                <a href="page1.html">
+                  WITHIN BEUTY</a
+                ></span
+              >
+              <div
+                class="header__logo--image page3"
+                OnClick="location.href ='page1.html'"
+                style="cursor: pointer"
+              ></div>
+            </div>
+            <div class="header__nav">
+              <ul>
+                <li>
+                  <a href="#"
+                    >입주업종</a
                   >
-                </button>
-              </li>
-              <li>
-                <button>
-                  <a href="page2.html">
-                    제휴 문의</a
+                </li>
+                <li>
+                  <div
+                    class="dots-flex"
                   >
-                </button>
-              </li>
-            </ul>
+                    <a href="#">
+                      <span>공간</span>
+                    </a>
+                    <div
+                      class="dots_image"
+                    ></div>
+                  </div>
+                </li>
+                <li>
+                  <button>
+                    <a
+                      href="page3.html"
+                    >
+                      <span
+                        >입점 문의</span
+                      >
+                    </a>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <a
+                      href="page2.html"
+                    >
+                      <span>
+                        제휴 문의</span
+                      ></a
+                    >
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div
@@ -174,7 +203,7 @@
             class="move-in-procedure__icon--wrap"
           >
             <img
-              src="img/7.png"
+              src="img/place.png"
               alt=""
             />
           </div>
@@ -192,24 +221,27 @@
         class="content__wrap page2"
         id="application_acceptance"
       >
-        <div
-          class="application_acceptance"
+        <form
+          action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSdZU9ZOc8N1PptLHwciA0kiRsrZKeSuMScPp2GeXNzIkL_FzQ/formResponse"
         >
           <div
-            class="application_acceptance__info"
+            class="application_acceptance"
           >
-            <h3>신청서 접수</h3>
-            <p>
-              *위드인뷰티는 고객의
-              개인정보를<br />
-              방문접수 외에 다른목적으로
-              사용하지 않습니다.
-            </p>
-          </div>
-          <div
-            class="application_acceptance__input"
-          >
-            <form action="">
+            <div
+              class="application_acceptance__info"
+            >
+              <h3>신청서 접수</h3>
+              <p>
+                *위드인뷰티는 고객의
+                개인정보를<br />
+                방문접수 외에
+                다른목적으로 사용하지
+                않습니다.
+              </p>
+            </div>
+            <div
+              class="application_acceptance__input"
+            >
               <div
                 class="application_acceptance--input--question"
               >
@@ -219,13 +251,13 @@
                 <div class="form">
                   <input
                     type="text"
-                    name="name"
                     autocomplete="off"
-                    required
+                    name="entry.1493361967"
+                    id="entry.1493361967"
                   />
                   <label
-                    for="name"
-                    class="label-name"
+                    for="entry.1493361967"
+                    class="entry.1493361967"
                   >
                     <span
                       class="content-name"
@@ -243,50 +275,14 @@
                   <div class="tel">
                     <input
                       type="tel"
-                      name="phone1"
+                      name="entry.2128274604"
                       autocomplete="off"
                       required
+                      class="entry.2128274604"
+                      onKeyup="inputPhoneNumber(this);"
+                      maxlength="13"
+                      style="left"
                     />
-                    <label
-                      for="name"
-                      class="label-name"
-                    >
-                      <span
-                        class="content-name"
-                      ></span
-                    ></label>
-                  </div>
-                  <div class="tel">
-                    <input
-                      type="tel"
-                      name="phone2"
-                      autocomplete="off"
-                      required
-                    />
-                    <label
-                      for="name"
-                      class="label-name"
-                    >
-                      <span
-                        class="content-name"
-                      ></span
-                    ></label>
-                  </div>
-                  <div class="tel">
-                    <input
-                      type="tel"
-                      name="phone3"
-                      autocomplete="off"
-                      required
-                    />
-                    <label
-                      for="name"
-                      class="label-name"
-                    >
-                      <span
-                        class="content-name"
-                      ></span
-                    ></label>
                   </div>
                 </div>
               </div>
@@ -297,12 +293,13 @@
                 <div class="form">
                   <input
                     type="text"
-                    name="address"
+                    name="entry.202299751"
                     autocomplete="off"
                     required
+                    id="entry.202299751"
                   />
                   <label
-                    for="name"
+                    for="entry.202299751"
                     class="label-name"
                   >
                     <span
@@ -321,116 +318,87 @@
                   class="radio_container"
                 >
                   <div class="radio">
-                    <label
-                      class="container"
-                      ><span class="up"
-                        >건물가치상승</span
-                      >
-                      <input
-                        type="radio"
-                        name="consult_type"
-                      />
-                      <span
-                        class="checkmark"
-                      ></span>
-                    </label>
+                    <input
+                      type="radio"
+                      name="entry.1044868945"
+                      value="건물가치상승"
+                      id="r1"
+                      class="r1"
+                    />
+                    <label for="r1"
+                      >건물가치상승</label
+                    >
                   </div>
                   <div class="radio">
-                    <label
-                      class="container"
-                      ><span class="up"
-                        >높은임대수익</span
-                      >
-                      <input
-                        type="radio"
-                        name="consult_type"
-                      />
-                      <span
-                        class="checkmark"
-                      ></span>
-                    </label>
+                    <input
+                      type="radio"
+                      name="entry.1044868945"
+                      id="r2"
+                      class="r2"
+                      value="높은임대수익"
+                    />
+                    <label for="r2"
+                      >높은임대수익</label
+                    >
                   </div>
                   <div class="radio">
+                    <input
+                      type="radio"
+                      name="entry.1044868945"
+                      id="r3"
+                      class="r3"
+                      value="창업고민"
+                    />
+                    <label for="r3"
+                      >창업고민</label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      name="entry.1044868945"
+                      id="r4"
+                      class="r4"
+                      value="공실률최소화"
+                    />
+                    <label for="r4"
+                      >공실률
+                      최소화</label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      name="entry.1044868945"
+                      id="r5"
+                      value="공간활용"
+                    />
                     <label
-                      class="container"
-                      ><span class="up"
-                        >창업고민</span
-                      >
-                      <input
-                        type="radio"
-                        name="consult_type"
-                      />
-                      <span
-                        class="checkmark"
-                      ></span>
-                    </label>
+                      for="r5"
+                      class="r5"
+                      >공간 활용</label
+                    >
                   </div>
                   <div class="radio">
+                    <input
+                      type="radio"
+                      name="entry.1044868945"
+                      id="r6"
+                      value="기타"
+                    />
                     <label
-                      class="container"
-                      ><span class="up"
-                        >공실률
-                        최소화</span
-                      >
-                      <input
-                        type="radio"
-                        name="consult_type"
-                      />
-                      <span
-                        class="checkmark"
-                      ></span>
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label
-                      class="container"
-                      ><span class="up"
-                        >공간 활용</span
-                      >
-                      <input
-                        type="radio"
-                        name="consult_type"
-                      />
-                      <span
-                        class="checkmark"
-                      ></span>
-                    </label>
-                  </div>
-                  <div
-                    class="radio etc"
-                  >
-                    <div class="radio">
-                      <label
-                        class="container"
-                        ><span
-                          class="up"
-                          >기타</span
-                        >
-                        <input
-                          type="radio"
-                          name="consult_type"
-                        />
-                        <span
-                          class="checkmark"
-                        ></span>
-                      </label>
-                    </div>
-                    <div class="form">
-                      <input
-                        type="text"
-                        name="name"
-                        autocomplete="off"
-                        required
-                      />
-                      <label
-                        for="name"
-                        class="label-name"
-                      >
-                        <span
-                          class="content-name"
-                        ></span
-                      ></label>
-                    </div>
+                      for="r6"
+                      class="r6 r_etc"
+                      >기타</label
+                    >
+                    <input
+                      type="text"
+                      name="entry.1044868945"
+                      id="r6"
+                      value=""
+                    />
                   </div>
                 </div>
               </div>
@@ -445,62 +413,43 @@
                   />
                 </h5>
                 <div
-                  class="agree_container"
-                  style="
-                    display: flex;
-                    width: 550px;
-                  "
+                  class="agreement_container"
                 >
                   <div class="radio">
-                    <div class="radio">
-                      <label
-                        class="container"
-                        ><span
-                          class="up"
-                          >동의</span
-                        >
-                        <input
-                          type="radio"
-                          name="agreement"
-                        />
-                        <span
-                          class="checkmark"
-                        ></span>
-                      </label>
-                    </div>
+                    <input
+                      type="radio"
+                      value="동의"
+                      name="entry.1545341742"
+                      id="agree"
+                    />
+                    <label for="agree"
+                      >동의</label
+                    >
                   </div>
                   <div class="radio">
-                    <div
-                      class="radio disagree"
+                    <input
+                      type="radio"
+                      value="미동의"
+                      name="entry.1545341742"
+                      id="disagree"
+                    />
+                    <label
+                      for="disagree"
+                      >미동의</label
                     >
-                      <label
-                        class="container"
-                        ><span
-                          class="up"
-                          >미동의</span
-                        >
-                        <input
-                          type="radio"
-                          name="agreement"
-                        />
-                        <span
-                          class="checkmark"
-                        ></span>
-                      </label>
-                    </div>
                   </div>
                 </div>
               </div>
               <div
                 class="application_acceptance__button"
               >
-                <button>
+                <button type="submit">
                   신청서 제출
                 </button>
               </div>
-            </form>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     <div
@@ -514,7 +463,9 @@
                 class="footer__address"
               >
                 <div class="logo">
-                  WITHIN BEAUTY
+                  <span
+                    >WITHIN BEAUTY</span
+                  >
                 </div>
                 <div class="phone">
                   02-XXXX-XXXX/ AM 10:00
@@ -591,7 +542,36 @@
         </div>
       </div>
     </div>
+    <script>
+      function inputPhoneNumber(obj) {
+        var number = obj.value.replace(
+          /[^0-9]/g,
+          ''
+        );
+        var phone = '';
 
+        if (number.length < 4) {
+          return number;
+        } else if (number.length < 7) {
+          phone += number.substr(0, 3);
+          phone += '-';
+          phone += number.substr(3);
+        } else if (number.length < 11) {
+          phone += number.substr(0, 3);
+          phone += '-';
+          phone += number.substr(3, 3);
+          phone += '-';
+          phone += number.substr(6);
+        } else {
+          phone += number.substr(0, 3);
+          phone += '-';
+          phone += number.substr(3, 4);
+          phone += '-';
+          phone += number.substr(7);
+        }
+        obj.value = phone;
+      }
+    </script>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
