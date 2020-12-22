@@ -57,17 +57,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
-    <style>
-      .content__application_acceptance--button {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .footer-flex{width: 100vw;height: 50vh;}
-    </style>
-  
+    <style></style>
+
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
@@ -114,656 +105,795 @@
       rel="stylesheet"
     />
     <style>
-      .footer__wrap {
-        color: white;
+      html {
+        scroll-behavior: smooth;
       }
-    .application_acceptance content{height: 120vh;}
     </style>
   </head>
   <body>
-    <div id="fullpage">
-      <div class="section">
-        <div class="header__wrap">
-          <div class="header">
-            <div class="header__logo">
-              <div
-                class="header__logo--image page3"
-              ></div>
-              <div
-                class="header__logo--text"
-              ></div>
-            </div>
-            <div class="header__nav">
-              <ul>
-                <li>입주업종</li>
-                <li>공간</li>
-                <li>
-                  <button>
-                    입점 문의
-                  </button>
-                </li>
-                <li>
-                  <button>
-                    제휴 문의
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="header__content--wrap page3"
-          >
+    <div class="section">
+      <div class="header__wrap">
+        <div class="header">
+          <div class="header__logo">
             <div
-              class="header__descripton"
-            >
-              <h5>투어신청</h5>
-              <h2>
-                언제든지 직접
-                경험하고<br />
-                여유롭게 고민하고 결정
-              </h2>
-              <p>
-                다양한 뷰티업종에
-                최적화된 서비스. <br />
-                최상의 업종간 시너지와
-                상권을 분석하여 <br />
-                디자이너님에게
-                추천해드립니다.
-              </p>
-              <div
-                class="header__descripton-button"
-              >
-                <button>입주신청</button
-                ><button>
-                  입주절차
+              class="header__logo--image page3"
+            ></div>
+            <div
+              class="header__logo--text"
+            ></div>
+          </div>
+          <div class="header__nav">
+            <ul>
+              <li>입주업종</li>
+              <li>공간</li>
+              <li>
+                <button>
+                  <a href="page3.html">
+                    입점 문의</a
+                  >
                 </button>
-              </div>
+              </li>
+              <li>
+                <button>
+                  <a href="page2.html">
+                    제휴 문의</a
+                  >
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="header__content--wrap page3"
+        >
+          <div
+            class="header__descripton"
+          >
+            <h5>투어신청</h5>
+            <h2>
+              언제든지 직접 경험하고<br />
+              여유롭게 고민하고 결정
+            </h2>
+            <p>
+              다양한 뷰티업종에 최적화된
+              서비스. <br />
+              최상의 업종간 시너지와
+              상권을 분석하여 <br />
+              디자이너님에게
+              추천해드립니다.
+            </p>
+            <div
+              class="header__descripton-button"
+            >
+              <button>
+                <a
+                  href="#application_acceptance"
+                  >입주신청</a
+                ></button
+              ><button>
+                <a
+                  href="#move-in-procedure"
+                  >입주절차</a
+                >
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <!--header--->
-      <div class="section">
+    </div>
+    <!--header--->
+
+    <div class="content__wrap page3">
+      <div class="move-in-procedure">
         <div
-          class="content__wrap page3"
+          class="move-in-procedure__title"
         >
-          <div
-            class="move-in-procedure"
-          >
-            <h3>입주절차</h3>
-            <p>
-              신청서를 작성해주시면<br />더욱
-              빠르게 효과적으로 입주가
-              가능합니다.
-            </p>
-            <div
-              class="move-in-procedure__icon--wrap"
-            >
-              <div class="icon">
-                신청서<br />접수
-              </div>
-              <div class="icon">
-                전화상담
-              </div>
-              <div class="icon">
-                투어<br />스케줄링
-              </div>
-              <div class="icon">
-                계약서<br />작성
-              </div>
-              <div class="icon">
-                WITHIN<br />BEATY<br />접수
-              </div>
-            </div>
-          </div>
+          <h3 id="move-in-procedure">
+            입주절차
+          </h3>
+          <p>
+            신청서를 작성해주시면<br />더욱
+            빠르게 효과적으로 입주가
+            가능합니다.
+          </p>
+        </div>
+        <div
+          class="move-in-procedure__icon--wrap page3"
+        >
+          <img src="img/8.png" alt="" />
         </div>
       </div>
-      <div class="section fp-auto-height">
+    </div>
+    <div class="section hr">
+      <div class="line">
+        <img class=line" src="img/6.png"
+        alt="" />
+      </div>
+      <div
+        id="application_acceptance"
+        class="application_acceptance content fp-auto-height"
+      >
         <div
-          class="application_acceptance content  fp-auto-height"
+          class="application_acceptance__info"
+        >
+          <h3>신청서 접수</h3>
+          <p>
+            *위드인뷰티는 고객의
+            개인정보를<br />
+            방문접수 외에 다른목적으로
+            사용하지 않습니다.
+          </p>
+        </div>
+        <div
+          class="application_acceptance__input"
         >
           <div
-            class="application_acceptance__info"
+            class="application_acceptance--input--question"
           >
-            <h3>신청서 접수</h3>
-            <p>
-              *위드인뷰티는 고객의
-              개인정보를<br />
-              방문접수 외에 다른목적으로
-              사용하지 않습니다.
-            </p>
+            <h5>
+              01. 선호지역을
+              선택해주세요.
+            </h5>
+            <div
+              class="radio_container page3"
+            >
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >신사</span
+                  >
+                  <input
+                    type="radio"
+                    name="address"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >압구정</span
+                  >
+                  <input
+                    type="radio"
+                    name="address"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >청담</span
+                  >
+                  <input
+                    type="radio"
+                    name="address"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >성수</span
+                  >
+                  <input
+                    type="radio"
+                    name="address"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >잠실</span
+                  >
+                  <input
+                    type="radio"
+                    name="address"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >선릉</span
+                  >
+                  <input
+                    type="radio"
+                    name="address"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >홍대</span
+                  >
+                  <input
+                    type="radio"
+                    name="address"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+            </div>
           </div>
+
           <div
-            class="application_acceptance__input"
+            class="application_acceptance--input--question"
           >
+            <h5>
+              02. 업종을 선택해주세요.
+            </h5>
             <div
-              class="application_acceptance--input--question"
+              class="radio_container page3 4row"
             >
-              <h5>
-                01. 선호지역을
-                선택해주세요.
-              </h5>
-              <div
-                class="radio_container"
-              >
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="agree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >신사</label
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >네일</span
                   >
-                </div>
-                <div class="radio">
                   <input
-                    class="radio-2"
-                    name="disagree"
                     type="radio"
+                    name="business_sector"
                   />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >압구정</label
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >속눈썹</span
                   >
-                </div>
-                <div class="radio">
                   <input
-                    class="radio-2"
-                    name="agree"
                     type="radio"
+                    name="business_sector"
                   />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >청담</label
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >왁싱</span
                   >
-                </div>
-                <div class="radio">
                   <input
-                    class="radio-2"
-                    name="disagree"
                     type="radio"
+                    name="business_sector"
                   />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >성수</label
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >피부관리</span
                   >
-                </div>
-                <div class="radio">
                   <input
-                    class="radio-2"
-                    name="agree"
                     type="radio"
+                    name="business_sector"
                   />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >잠실</label
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >체형관리</span
                   >
-                </div>
-                <div class="radio">
                   <input
-                    class="radio-2"
-                    name="disagree"
                     type="radio"
+                    name="business_sector"
                   />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >선릉</label
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >메이크업</span
                   >
-                </div>
-                <div class="radio">
                   <input
-                    class="radio-2"
-                    name="disagree"
                     type="radio"
+                    name="business_sector"
                   />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >논현</label
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >헤어</span
                   >
-                </div>
-                <div class="radio">
                   <input
-                    class="radio-2"
-                    name="disagree"
                     type="radio"
+                    name="business_sector"
                   />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >홍대</label
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >에스테틱</span
                   >
-                </div>
+                  <input
+                    type="radio"
+                    name="business_sector"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >두피관리</span
+                  >
+                  <input
+                    type="radio"
+                    name="business_sector"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >붙임머리</span
+                  >
+                  <input
+                    type="radio"
+                    name="business_sector"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
               </div>
             </div>
+          </div>
+
+          <div
+            class="application_acceptance--input--question"
+          >
+            <h5>03. 연령대</h5>
             <div
-              class="application_acceptance--input--question"
+              class="radio_container page3"
             >
-              <h5>
-                02. 업종을 선택해주세요.
-              </h5>
-              <div
-                class="radio_container"
-              >
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="agree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >네일</label
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >20대</span
                   >
-                </div>
-                <div class="radio">
                   <input
-                    class="radio-2"
-                    name="disagree"
                     type="radio"
+                    name="age"
                   />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >속눈썹</label
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >30대</span
                   >
-                </div>
-                <div class="radio">
                   <input
-                    class="radio-2"
-                    name="agree"
                     type="radio"
+                    name="age"
                   />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >왁싱</label
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >40대</span
                   >
-                </div>
-                <div class="radio">
                   <input
-                    class="radio-2"
-                    name="disagree"
                     type="radio"
+                    name="age"
                   />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >피부관리</label
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <br />
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >50대 이상</span
                   >
-                </div>
-                <div class="radio">
                   <input
-                    class="radio-2"
-                    name="agree"
                     type="radio"
+                    name="age"
                   />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >체형관리</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="disagree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >메이크업</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="agree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >헤어</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="disagree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >에스테틱</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="agree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >두피관리</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="disagree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >붙임머리</label
-                  >
-                </div>
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
               </div>
             </div>
-            <div
-              class="application_acceptance--input--question"
-            >
-              <h5>03. 연령대</h5>
-              <div
-                class="radio_container"
-              >
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="agree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >20대</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="disagree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >30대</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="agree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >40대</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="disagree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >50대 이상</label
-                  >
-                </div>
-              </div>
-            </div>
-            <div
-              class="application_acceptance--input--question"
-            >
-              <h5>04. 성함</h5>
+          </div>
+
+          <div class="t--question">
+            <h5>04. 성함</h5>
+            <div class="form">
               <input
                 type="text"
-                name="userName"
+                name="name"
+                autocomplete="off"
+                required
               />
-            </div>
-            <div
-              class="application_acceptance--input--question"
-            >
-              <h5>05. 연락처</h5>
-              <form
-                name="page3_연락처"
-                action="값을 보낼 주소"
-                method="post"
+              <label
+                for="name"
+                class="label-name"
               >
+                <span
+                  class="content-name"
+                ></span
+              ></label>
+            </div>
+          </div>
+
+          <div
+            class="application_acceptance--input--question"
+          >
+            <h5>05. 연락처</h5>
+            <div class="tel__container">
+              <div class="tel">
                 <input
                   type="tel"
                   name="phone1"
-                />-
+                  autocomplete="off"
+                  required
+                />
+                <label
+                  for="name"
+                  class="label-name"
+                >
+                  <span
+                    class="content-name"
+                  ></span
+                ></label>
+              </div>
+              <div class="tel">
                 <input
                   type="tel"
                   name="phone2"
-                />-
+                  autocomplete="off"
+                  required
+                />
+                <label
+                  for="name"
+                  class="label-name"
+                >
+                  <span
+                    class="content-name"
+                  ></span
+                ></label>
+              </div>
+              <div class="tel">
                 <input
                   type="tel"
                   name="phone3"
+                  autocomplete="off"
+                  required
                 />
-              </form>
-            </div>
-            <div
-              class="application_acceptance--input--question"
-            >
-              <h5>06. 알게된 경위</h5>
-              <div
-                class="radio_container"
-              >
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="agree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >네이버</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    input
-                    class
-                    id="radio-2"
-                    name="disagree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >구글</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="agree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >다음</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="disagree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >SNS</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="agree"
-                    type="radio"
-                  />
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >지인</label
-                  >
-                </div>
-                <div class="radio">
-                  <input
-                    class="radio-2"
-                    name="disagree"
-                    type="radio"
-                  />
-
-                  <label
-                    for="radio-2"
-                    class="radio-label"
-                    >기타</label
-                  >
-                  <input
-                    class
-                    pe="text"
-                    name="userLocation"
-                  />
-                </div>
-              </div>
-              <div
-                class="application_acceptance--input--question"
-              >
-                <h5>
-                  개인정보수집동의
-                </h5>
-                <div
-                  class="radio_container"
+                <label
+                  for="name"
+                  class="label-name"
                 >
-                  <div class="radio">
-                    <input
-                      class
-                      id="radio-2"
-                      name="agree"
-                      type="radio"
-                    />
-                    <label
-                      for="radio-2"
-                      class="radio-label"
-                      >동의</label
+                  <span
+                    class="content-name"
+                  ></span
+                ></label>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="application_acceptance--input--question"
+          >
+            <h5>06. 알게된 경위</h5>
+            <div
+              class="radio_container page3 q6"
+            >
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >네이버</span
+                  >
+                  <input
+                    type="radio"
+                    name="how_to_know"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >구글</span
+                  >
+                  <input
+                    type="radio"
+                    name="how_to_know"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >다음</span
+                  >
+                  <input
+                    type="radio"
+                    name="how_to_know"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >SNS</span
+                  >
+                  <input
+                    type="radio"
+                    name="how_to_know"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="container"
+                  ><span class="up"
+                    >지인</span
+                  >
+                  <input
+                    type="radio"
+                    name="how_to_know"
+                  />
+                  <span
+                    class="checkmark"
+                  ></span>
+                </label>
+              </div>
+              <div
+                class="radio etc page3 w200"
+              >
+                <div class="radio">
+                  <label
+                    class="container"
+                    ><span class="up"
+                      >기타</span
                     >
-                  </div>
-                  <div class="radio">
                     <input
-                      class
-                      id="radio-2"
-                      name="disagree"
                       type="radio"
+                      name="how_to_know"
                     />
-                    <label
-                      for="radio-2"
-                      class="radio-label"
-                      >미동의</label
-                    >
-                  </div>
+                    <span
+                      class="checkmark"
+                    ></span>
+                  </label>
+                </div>
+                <div class="form">
+                  <input
+                    type="text"
+                    name="name"
+                    autocomplete="off"
+                    required
+                  />
+                  <label
+                    for="name"
+                    class="label-name"
+                  >
+                    <span
+                      class="content-name"
+                    ></span
+                  ></label>
                 </div>
               </div>
             </div>
-        </div>
-      </div>
-      </div>
-      <div class="section fp-auto-height">
-      <div class="footer-flex">
-        <div class="footer__wrap">
-          <div class="footer">
+          </div>
+          <div
+            class="application_acceptance--input--question"
+          >
+            <h5>
+              개인정보수집동의
+              <img
+                src="img/share.png"
+                alt=""
+              />
+            </h5>
             <div
-              class="footer__address"
+              class="agree_container"
+              style="
+                display: flex;
+                width: 550px;
+              "
             >
-              <div class="logo">
-                WITHIN BEAUTY
+              <div class="radio">
+                <div class="radio">
+                  <label
+                    class="container"
+                    ><span class="up"
+                      >동의</span
+                    >
+                    <input
+                      type="radio"
+                      name="agreement"
+                    />
+                    <span
+                      class="checkmark"
+                    ></span>
+                  </label>
+                </div>
               </div>
-              <div class="phone">
-                02-XXXX-XXXX/ AM 10:00
-                – PM 08:30 / Off -
-                time PM 08:30 - AM
-                10:00
-              </div>
-              <div class="email">
-                admin@withinshop.com
-              </div>
-              <div class="email">
-                www.withinshop.com
-              </div>
-              <div class="email">
-                주식회사 위드 인
-                벤처스 대표자 : 권혜진
-              </div>
-              <div class="email">
-                ( 06192 ) 서울시
-                강남구 선릉 로 428 위
-                워크 선릉 3 호점
-              </div>
-              <div class="email">
-                Copyright,
-                withinventures Corp.
-                All right reserved.
+              <div class="radio">
+                <div
+                  class="radio disagree"
+                >
+                  <label
+                    class="container"
+                    ><span class="up"
+                      >미동의</span
+                    >
+                    <input
+                      type="radio"
+                      name="agreement"
+                    />
+                    <span
+                      class="checkmark"
+                    ></span>
+                  </label>
+                </div>
               </div>
             </div>
-            <div class="footer__nav">
-              <ul>
-                <li>서비스 소개</li>
-                <li>공간</li>
-                <li>회사소개</li>
-                <li>제휴 문의</li>
-              </ul>
-            </div>
-            <div
-              class="footer__icon-container"
-            >
-              <div
-                class="footer__icon facebook"
-              ></div>
-              <div
-                class="footer__icon youtube"
-              ></div>
-              <div
-                class="footer__icon behance"
-              ></div>
-              <div
-                class="footer__icon instagram"
-              ></div>
-            </div>
+          </div>
+          <div
+            class="application_acceptance__button"
+          >
+            <button>신청서 제출</button>
           </div>
         </div>
       </div>
+    </div>
+    <div class="footer-flex">
+      <div class="footer__wrap">
+        <div class="footer">
+          <div class="footer__address">
+            <div class="logo">
+              WITHIN BEAUTY
+            </div>
+            <div class="phone">
+              02-XXXX-XXXX/ AM 10:00 –
+              PM 08:30 / Off - time PM
+              08:30 - AM 10:00
+            </div>
+            <div class="email">
+              <img
+                src="img/email.png"
+                alt=""
+              />
+              <span>
+                admin@withinshop.com</span
+              >
+            </div>
+            <div class="email website">
+              <img
+                src="img/safari.png"
+                alt=""
+              />
+              <span>
+                www.withinshop.com</span
+              >
+            </div>
+            <div class="company_name">
+              주식회사 위드 인 벤처스 |
+              대표자 : 권혜진
+            </div>
+            <div class="address">
+              ( 06192 ) 서울시 강남구
+              선릉로 428 위워크 선릉
+              3호점
+            </div>
+            <div class="copyright">
+              Copyright, withinventures
+              Corp. All right reserved.
+            </div>
+          </div>
+          <div
+            class="footer__nav page3"
+          >
+            <ul>
+              <li>서비스 소개</li>
+              <li>공간</li>
+              <li>회사소개</li>
+              <li>제휴 문의</li>
+            </ul>
+          </div>
+          <div
+            class="footer__icon-container"
+          >
+            <div
+              class="footer__icon facebook"
+            ></div>
+            <div
+              class="footer__icon youtube"
+            ></div>
+            <div
+              class="footer__icon behance"
+            ></div>
+            <div
+              class="footer__icon instagram"
+            ></div>
+          </div>
+        </div>
       </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    </div>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>new fullpage('#fullpage', {
-  anchors: ['page1', 'page2', 'page3', 'page4'],
-  
-});</script>  
-</body>
+    <script>
+      new fullpage('#fullpage', {
+        anchors: [
+          'page1',
+          'page2',
+          'page3',
+          'page4',
+        ],
+      });
+    </script>
+  </body>
 </html>

@@ -66,82 +66,100 @@
         align-items: center;
         justify-content: center;
       }
+      #footer {
+        height: 400px;
+      }
+      .disagree {
+        margin-left: 200px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
   </head>
   <body>
     <script>
       AOS.init();
     </script>
-    <div id="fullpage">
-      <div class="section">
-        <div class="header__wrap">
-          <div class="header">
-            <div class="header__logo">
-              <div
-                class="header__logo--image"
-              ></div>
-              <div
-                class="header__logo--text"
-              ></div>
-            </div>
-            <div class="header__nav">
-              <ul>
-                <li>입주업종</li>
-                <li>공간</li>
-                <li>
-                  <button>
-                    입점 문의
-                  </button>
-                </li>
-                <li>
-                  <button>
-                    제휴 문의
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="header__content--wrap page2"
-          >
+    <div class="section">
+      <div class="header__wrap">
+        <div class="header">
+          <div class="header__logo">
             <div
-              class="header__descripton"
-            >
-              <h2>
-                공간가치 극대화에<br />
-                최적화된 빌딩솔루션
-                제안.
-              </h2>
-              <p>
-                공간의 브랜딩을 통해
-                공간 가치를
-                극대화하여<br />
-                공실률을 최소화,
-                지속적이고 안정적인<br />
-                임대 수익률로 임대인의
-                고민을 해결해드립니다.
-              </p>
-              <div
-                class="header__descripton-button"
-              >
+              class="header__logo--image"
+            ></div>
+            <div
+              class="header__logo--text"
+            ></div>
+          </div>
+          <div class="header__nav">
+            <ul>
+              <li>입주업종</li>
+              <li>공간</li>
+              <li>
                 <button>
-                  제휴 신청</button
-                ><button>
-                  제휴 절차
+                  <a href="page3.html">
+                    입점 문의</a
+                  >
                 </button>
-              </div>
+              </li>
+              <li>
+                <button>
+                  <a href="page2.html">
+                    제휴 문의</a
+                  >
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="header__content--wrap page2"
+        >
+          <div
+            class="header__descripton"
+          >
+            <h2>
+              공간가치 극대화에<br />
+              최적화된 빌딩솔루션 제안.
+            </h2>
+            <p>
+              공간의 브랜딩을 통해 공간
+              가치를 극대화하여<br />
+              공실률을 최소화,
+              지속적이고 안정적인<br />
+              임대 수익률로 임대인의
+              고민을 해결해드립니다.
+            </p>
+            <div
+              class="header__descripton-button"
+            >
+              <button>
+                <a
+                  href="#application_acceptance"
+                  >제휴 신청</a
+                ></button
+              ><button>
+                <a
+                  href="#move-in-procedure"
+                >
+                  제휴 절차</a
+                >
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="section bg">
-        <div
-          class="content__wrap page2"
-        >
+    </div>
+    <div class="section bg">
+      <div class="content__wrap page2">
+        <div class="move-in-procedure">
           <div
-            class="move-in-procedure"
+            class="move-in-procedure__title"
           >
-            <h3>공간 활용 솔루션</h3>
+            <h3 id="move-in-procedure">
+              공간 활용 솔루션
+            </h3>
             <p>
               적은 비용으로 공간을
               브랜딩하여 공간의 활용을
@@ -151,80 +169,147 @@
               수익구조를 만들어
               드립니다.
             </p>
-            <div
-              class="move-in-procedure__icon--wrap"
-            >
-              <img
-                src="img/7.png"
-                alt=""
-                style="width: 1, 272‬px"
-              />
-            </div>
+          </div>
+          <div
+            class="move-in-procedure__icon--wrap"
+          >
+            <img
+              src="img/7.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
-      <div class="section bg">
+    </div>
+
+    <div
+      class="section bg fp-auto-height"
+    >
+      <div class="line">
+        <img src="img/6.png" alt="" />
+      </div>
+      <div
+        class="content__wrap page2"
+        id="application_acceptance"
+      >
         <div
-          class="content__wrap page2"
+          class="application_acceptance"
         >
           <div
-            class="application_acceptance"
+            class="application_acceptance__info"
           >
-            <div
-              class="application_acceptance__info"
-            >
-              <h3>신청서 접수</h3>
-              <p>
-                *위드인뷰티는 고객의
-                개인정보를<br />
-                방문접수 외에
-                다른목적으로 사용하지
-                않습니다.
-              </p>
-            </div>
-            <div
-              class="application_acceptance__input"
-            >
+            <h3>신청서 접수</h3>
+            <p>
+              *위드인뷰티는 고객의
+              개인정보를<br />
+              방문접수 외에 다른목적으로
+              사용하지 않습니다.
+            </p>
+          </div>
+          <div
+            class="application_acceptance__input"
+          >
+            <form action="">
               <div
                 class="application_acceptance--input--question"
               >
                 <h5>
                   01. 이름 or 회사명
                 </h5>
-                <input
-                  type="text"
-                  name="userName"
-                />
+                <div class="form">
+                  <input
+                    type="text"
+                    name="name"
+                    autocomplete="off"
+                    required
+                  />
+                  <label
+                    for="name"
+                    class="label-name"
+                  >
+                    <span
+                      class="content-name"
+                    ></span
+                  ></label>
+                </div>
               </div>
               <div
                 class="application_acceptance--input--question"
               >
                 <h5>02. 연락처</h5>
-                <form
-                  name="page2_phoneNumber"
-                  method="post"
-                ></form>
-                <input
-                  type="tel"
-                  name="phone1"
-                />-
-                <input
-                  type="tel"
-                  name="phone2"
-                />-
-                <input
-                  type="tel"
-                  name="phone3"
-                />
+                <div
+                  class="tel__container"
+                >
+                  <div class="tel">
+                    <input
+                      type="tel"
+                      name="phone1"
+                      autocomplete="off"
+                      required
+                    />
+                    <label
+                      for="name"
+                      class="label-name"
+                    >
+                      <span
+                        class="content-name"
+                      ></span
+                    ></label>
+                  </div>
+                  <div class="tel">
+                    <input
+                      type="tel"
+                      name="phone2"
+                      autocomplete="off"
+                      required
+                    />
+                    <label
+                      for="name"
+                      class="label-name"
+                    >
+                      <span
+                        class="content-name"
+                      ></span
+                    ></label>
+                  </div>
+                  <div class="tel">
+                    <input
+                      type="tel"
+                      name="phone3"
+                      autocomplete="off"
+                      required
+                    />
+                    <label
+                      for="name"
+                      class="label-name"
+                    >
+                      <span
+                        class="content-name"
+                      ></span
+                    ></label>
+                  </div>
+                </div>
               </div>
               <div
                 class="application_acceptance--input--question"
               >
                 <h5>03. 지역</h5>
-                <input
-                  type="text"
-                  name="etc"
-                />
+                <div class="form">
+                  <input
+                    type="text"
+                    name="address"
+                    autocomplete="off"
+                    required
+                  />
+                  <label
+                    for="name"
+                    class="label-name"
+                  >
+                    <span
+                      class="content-name"
+                    ></span
+                  ></label>
+                </div>
               </div>
               <div
                 class="application_acceptance--input--question"
@@ -236,69 +321,116 @@
                   class="radio_container"
                 >
                   <div class="radio">
-                    <input
-                      class="radio-2"
-                      name="agree"
-                      type="radio"
-                    />
                     <label
-                      for="radio-2"
-                      class="radio-label"
-                      >건물가치상승</label
-                    >
+                      class="container"
+                      ><span class="up"
+                        >건물가치상승</span
+                      >
+                      <input
+                        type="radio"
+                        name="consult_type"
+                      />
+                      <span
+                        class="checkmark"
+                      ></span>
+                    </label>
                   </div>
                   <div class="radio">
-                    <input
-                      class="radio-2"
-                      name="disagree"
-                      type="radio"
-                    />
                     <label
-                      for="radio-2"
-                      class="radio-label"
-                      >공실률
-                      최소화</label
-                    >
+                      class="container"
+                      ><span class="up"
+                        >높은임대수익</span
+                      >
+                      <input
+                        type="radio"
+                        name="consult_type"
+                      />
+                      <span
+                        class="checkmark"
+                      ></span>
+                    </label>
                   </div>
                   <div class="radio">
-                    <input
-                      class="radio-2"
-                      name="agree"
-                      type="radio"
-                    />
                     <label
-                      for="radio-2"
-                      class="radio-label"
-                      >높은임대수익</label
-                    >
+                      class="container"
+                      ><span class="up"
+                        >창업고민</span
+                      >
+                      <input
+                        type="radio"
+                        name="consult_type"
+                      />
+                      <span
+                        class="checkmark"
+                      ></span>
+                    </label>
                   </div>
                   <div class="radio">
-                    <input
-                      class="radio-2"
-                      name="disagree"
-                      type="radio"
-                    />
                     <label
-                      for="radio-2"
-                      class="radio-label"
-                      >공간활용</label
-                    >
+                      class="container"
+                      ><span class="up"
+                        >공실률
+                        최소화</span
+                      >
+                      <input
+                        type="radio"
+                        name="consult_type"
+                      />
+                      <span
+                        class="checkmark"
+                      ></span>
+                    </label>
                   </div>
                   <div class="radio">
-                    <input
-                      class="radio-2"
-                      name="disagree"
-                      type="radio"
-                    />
                     <label
-                      for="radio-2"
-                      class="radio-label"
-                      >기타</label
-                    >
-                    <input
-                      type="text"
-                      name="etc"
-                    />
+                      class="container"
+                      ><span class="up"
+                        >공간 활용</span
+                      >
+                      <input
+                        type="radio"
+                        name="consult_type"
+                      />
+                      <span
+                        class="checkmark"
+                      ></span>
+                    </label>
+                  </div>
+                  <div
+                    class="radio etc"
+                  >
+                    <div class="radio">
+                      <label
+                        class="container"
+                        ><span
+                          class="up"
+                          >기타</span
+                        >
+                        <input
+                          type="radio"
+                          name="consult_type"
+                        />
+                        <span
+                          class="checkmark"
+                        ></span>
+                      </label>
+                    </div>
+                    <div class="form">
+                      <input
+                        type="text"
+                        name="name"
+                        autocomplete="off"
+                        required
+                      />
+                      <label
+                        for="name"
+                        class="label-name"
+                      >
+                        <span
+                          class="content-name"
+                        ></span
+                      ></label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -306,31 +438,56 @@
                 class="application_acceptance--input--question"
               >
                 <h5>
-                  05. 개인정보수집동의
+                  개인정보수집동의
+                  <img
+                    src="img/share.png"
+                    alt=""
+                  />
                 </h5>
                 <div
-                  class="radio_container"
+                  class="agree_container"
+                  style="
+                    display: flex;
+                    width: 550px;
+                  "
                 >
                   <div class="radio">
-                    <label
-                      for="radio-2"
-                      class="radio-label"
-                    >
-                      <input
-                        type="radio"
-                        value="agree" />동의<span
-                      ></span
-                    ></label>
+                    <div class="radio">
+                      <label
+                        class="container"
+                        ><span
+                          class="up"
+                          >동의</span
+                        >
+                        <input
+                          type="radio"
+                          name="agreement"
+                        />
+                        <span
+                          class="checkmark"
+                        ></span>
+                      </label>
+                    </div>
                   </div>
                   <div class="radio">
-                    <label
-                      for="radio-2"
-                      class="radio-label"
-                      ><input
-                        type="radio"
-                        value="disagree" />미동의<span
-                      ></span
-                    ></label>
+                    <div
+                      class="radio disagree"
+                    >
+                      <label
+                        class="container"
+                        ><span
+                          class="up"
+                          >미동의</span
+                        >
+                        <input
+                          type="radio"
+                          name="agreement"
+                        />
+                        <span
+                          class="checkmark"
+                        ></span>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -341,11 +498,15 @@
                   신청서 제출
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
-      <div class="section bg">
+    </div>
+    <div
+      class="section bg fp-auto-height"
+    >
+      <div id="footer">
         <div class="footer-flex">
           <div class="footer__wrap">
             <div class="footer">
@@ -362,27 +523,46 @@
                   10:00
                 </div>
                 <div class="email">
-                  admin@withinshop.com
+                  <img
+                    src="img/email.png"
+                    alt=""
+                  />
+                  <span>
+                    admin@withinshop.com</span
+                  >
                 </div>
-                <div class="email">
-                  www.withinshop.com
+                <div
+                  class="email website"
+                >
+                  <img
+                    src="img/safari.png"
+                    alt=""
+                  />
+                  <span>
+                    www.withinshop.com</span
+                  >
                 </div>
-                <div class="email">
+                <div
+                  class="company_name"
+                >
                   주식회사 위드 인
-                  벤처스 대표자 : 권혜진
+                  벤처스 | 대표자 :
+                  권혜진
                 </div>
-                <div class="email">
+                <div class="address">
                   ( 06192 ) 서울시
-                  강남구 선릉 로 428 위
-                  워크 선릉 3 호점
+                  강남구 선릉로 428
+                  위워크 선릉 3호점
                 </div>
-                <div class="email">
+                <div class="copyright">
                   Copyright,
                   withinventures Corp.
                   All right reserved.
                 </div>
               </div>
-              <div class="footer__nav">
+              <div
+                class="footer__nav page2"
+              >
                 <ul>
                   <li>서비스 소개</li>
                   <li>공간</li>
@@ -411,8 +591,16 @@
         </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#fullpage').fullpage({
+          autoScrolling: false,
+          fitToSection: false,
+        });
+      });
+    </script>
   </body>
 </html>
