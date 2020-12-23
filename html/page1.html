@@ -109,7 +109,8 @@
               <div class="header__nav">
                 <ul>
                   <li>
-                    <a href="#"
+                    <a
+                      href="page1.html#tenant_industry"
                       >입주업종</a
                     >
                   </li>
@@ -117,7 +118,9 @@
                     <div
                       class="dots-flex"
                     >
-                      <a href="#">
+                      <a
+                        href="page1.html#place"
+                      >
                         <span
                           >공간</span
                         >
@@ -176,7 +179,7 @@
         </div>
         <!--header-->
       </div>
-      <div class="section">
+      <div class="section" id="place">
         <div class="brand_identity">
           <div
             class="brand_identity__container section"
@@ -200,6 +203,7 @@
         >
           <div
             class="brand__recruitment"
+            id="tenant_industry"
           >
             <h3>새로운 경험을 함께.</h3>
             <p>
@@ -231,7 +235,10 @@
         </div>
       </div>
       <div class="section">
-        <div class="brand_membership">
+        <div
+          class="brand_membership"
+          id="service"
+        >
           <div
             class="brand_membership__container"
           >
@@ -260,7 +267,7 @@
           </div>
         </div>
       </div>
-      <div class="section">
+      <div class="section" id="#graph">
         <div class="G-wrap">
           <div class="g-wrap">
             <div class="text">
@@ -377,7 +384,10 @@
         </div>
       </div>
       <div class="section">
-        <div class="brand_branding">
+        <div
+          class="brand_branding"
+          id="branding"
+        >
           <div
             class="brand_branding__title"
           >
@@ -502,12 +512,41 @@
                       Site map
                     </div>
                   </li>
-                  <li>회사 소개</li>
-                  <li>입주 업종</li>
-                  <li>서비스</li>
-                  <li>비용 절감</li>
-                  <li>공간</li>
-                  <li>제휴문의</li>
+                  <li>
+                    <a
+                      href="page1.html#place"
+                      >회사 소개</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="page1.html#tenant_industry"
+                      >입주 업종</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="page1.html#service"
+                      >서비스</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="page1.html#graph"
+                      >비용 절감</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="page1.html#branding"
+                      >공간</a
+                    >
+                  </li>
+                  <li>
+                    <a href="page2.html"
+                      >제휴문의</a
+                    >
+                  </li>
                 </ul>
               </div>
               <div
@@ -535,7 +574,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
+    <script>
+      $('#fullpage').fullpage({
+        anchors: [
+          '#place',
+          '#service',
+          '#graph',
+          '#branding',
+          '#tenant_industry',
+        ],
+      });
+    </script>
     <script>
       AOS.init();
       AOS.init({

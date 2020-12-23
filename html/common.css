@@ -622,7 +622,7 @@ p {
       2.5rem
     );
   grid-auto-flow: column;
-  grid-row-gap: 0.6em;
+  grid-row-gap: 0em;
 }
 .footer__nav ul li {
 }
@@ -1228,7 +1228,7 @@ body[data-aos-duration='4000']
 .graph__wrap {
   display: grid;
   height: 70vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 0.67fr 1.5fr 0.1fr 1fr;
   grid-template-rows: 20% 20% 20% 20%;
   grid-template-areas:
     'l . . . .'
@@ -1281,7 +1281,7 @@ body[data-aos-duration='4000']
   grid-area: p83;
 }
 .p100 {
-  margin: 4.075rem 4.319rem 0;
+  margin: 4.075rem 0;
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 3;
