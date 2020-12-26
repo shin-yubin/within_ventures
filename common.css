@@ -1956,6 +1956,12 @@ input[type='checkbox']:checked
   .footer__wrap {
     height: auto;
   }
+  .footer__wrap.page1 {
+    width: 100vw;
+    height: 30vh;
+    background-color: #000000;
+    color: white;
+  }
   .footer {
     padding-top: 6%;
   }
@@ -2168,7 +2174,7 @@ input[type='checkbox']:checked
     width: 90vw;
   }
   .application_acceptance__button {
-    width: 88vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
   }
@@ -2176,20 +2182,8 @@ input[type='checkbox']:checked
     button {
     width: 20rem;
     height: 10rem;
-    font-family: 'Noto Sans KR',
-      sans-serif;
     font-size: 2.5rem;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.72;
-    letter-spacing: normal;
-    color: white;
-    background-color: black;
-    text-align: center;
-    border-radius: 2.5rem;
-    padding: 0 0.625rem;
-    margin: 5.438rem 0em 8.188rem 0;
+    border-radius: 5rem;
   }
   .agreement_container {
     display: grid;
@@ -2251,13 +2245,23 @@ input[type='checkbox']:checked
   .graph__wrap {
     display: grid;
     height: 50vh;
-    grid-template-columns: 0.5fr 1fr 1.5fr 0.3fr 1fr;
+    grid-template-columns: 1.3fr 1fr 1.5fr 0.3fr 1fr;
     grid-template-rows: 10% 20% 20% 20%;
     grid-template-areas:
       'l . . . .'
       'm1 g1 p83 . . '
       'm2 g2 g2 g2 p100'
       'bt des des des des';
+  }
+  .graph__logo {
+    background-position: 0 3rem;
+    width: 26vw;
+    height: 10vh;
+  }
+  .graph2_title_bold {
+    margin: 0;
+    margin-bottom: 1rem;
+    width: auto;
   }
   .graph__money {
     padding-left: 5%;
@@ -2271,6 +2275,10 @@ input[type='checkbox']:checked
   }
   .brand_branding__button {
     height: 60vh;
+  }
+  .brand_branding img {
+    margin-bottom: 5.5vh;
+    width: 100vw;
   }
   .footer__wrap.page1 {
     height: 40vh;
@@ -2287,5 +2295,44 @@ input[type='checkbox']:checked
     width: 35.3125%;
     margin-right: 4.2343749999999996%;
     margin-left: 12.057291666666666%;
+  }
+  .application_acceptance--input--question.form
+    h5 {
+    margin-bottom: 3rem;
+  }
+  .application_acceptance--input--question.form {
+    margin-bottom: 5rem;
+    display: block;
+    justify-content: space-between;
+  }
+  .brand__recruitment {
+    width: 100vw;
+    height: 60vh;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      1
+    );
+  }
+  .brand__recruitment h3 {
+    margin: 0;
+  }
+  .recruitment__icon--wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+  }
+  .brand_membership__container {
+    width: 75vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: auto;
   }
 }
