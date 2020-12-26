@@ -1367,6 +1367,15 @@ body[data-aos-duration='4000']
   opacity: 0.52;
   background-color: #52c3dd;
 }
+.form input,
+.tel input {
+  border: none;
+  border-radius: 0;
+  width: 45rem;
+  height: 5rem;
+  opacity: 0.52;
+  background-color: #52c3dd;
+}
 /*.tel__container {
   display: flex;
 
@@ -1688,6 +1697,7 @@ input[type='checkbox']:checked
   html {
     font-size: 10px;
   }
+
   .recruitment__icon-container img {
     height: auto;
     width: 25rem;
@@ -1705,6 +1715,7 @@ input[type='checkbox']:checked
   html {
     font-size: 10px;
   }
+
   .recruitment__icon-container img {
     height: auto;
     width: 12.5rem;
@@ -1819,6 +1830,12 @@ input[type='checkbox']:checked
     align-items: flex-start;
     margin-left: 10%;
     margin-top: 30%;
+  }
+  .header__descripton-button button {
+    width: 15rem;
+    height: 7rem;
+
+    font-size: 2.5rem;
   }
   .header__descripton p {
     color: black;
@@ -2047,7 +2064,7 @@ input[type='checkbox']:checked
     margin: 0 2rem 4rem 0.25rem;
     font-size: 5rem;
     line-height: 6rem;
-
+    width: 50vw;
     /*font-size: 2.938rem;*/
   }
   .application_acceptance__info p {
@@ -2098,7 +2115,8 @@ input[type='checkbox']:checked
     height: 3rem;
     width: 3rem;
   }
-  .form input {
+  .form input,
+  .tel input {
     border: none;
     border-radius: 0;
     width: 45rem;
@@ -2106,8 +2124,21 @@ input[type='checkbox']:checked
     opacity: 0.52;
     background-color: #52c3dd;
   }
+  .radio_container {
+    display: grid;
+    width: 88vw;
+  }
+  .radio_container {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(
+      2,
+      1fr
+    );
+    grid-auto-flow: column;
+  }
   label {
     font-size: 2.3rem;
+    width: 44vw;
   }
   .application_acceptance--input--question {
     width: 88vw;
@@ -2131,7 +2162,7 @@ input[type='checkbox']:checked
   }
   .application_acceptance--input--question
     .form {
-    display: inline-block;
+    display: block;
   }
   .move-in-procedure__icon--wrap img {
     width: 90vw;
@@ -2159,6 +2190,10 @@ input[type='checkbox']:checked
     border-radius: 2.5rem;
     padding: 0 0.625rem;
     margin: 5.438rem 0em 8.188rem 0;
+  }
+  .agreement_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media all and (max-width: 320px) {
