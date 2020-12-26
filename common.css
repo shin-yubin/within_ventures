@@ -217,12 +217,6 @@ p {
 
 .header__wrap {
   width: 100vw;
-  background-color: rgba(
-    0,
-    0,
-    255,
-    0.1
-  );
 }
 .header {
   width: 100vw;
@@ -589,7 +583,12 @@ p {
   display: flex;
   color: white;
   padding-top: 3.125rem;
-  justify-content: center;
+  justify-content: flex-start;
+}
+.footer--mobile_grid {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .footer__nav {
@@ -624,18 +623,16 @@ p {
   grid-auto-flow: column;
   grid-row-gap: 0em;
 }
-.footer__nav ul li {
-}
+
 .footer__nav li:nth-child(1) {
   text-align: left;
   font-weight: 700;
 }
 .footer__icon-container {
   display: inline-flex;
-  width: 25%;
+  width: 100%;
   height: 100%;
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-end;
   margin-right: 3%;
 }
 .footer__icon {
@@ -657,7 +654,7 @@ p {
 .content__wrap.page2,
 .content__wrap.page3 {
   width: 100vw;
-  /* background-color: rgba( 255, 255, 0, 0.1 ); */
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -671,7 +668,7 @@ p {
   width: 100vw;
   height: auto;
   margin-bottom: 20.33125rem;
-  /* background-color: rgba( 255, 255, 0, 0.1 ); */
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -892,7 +889,7 @@ p {
   background-size: cover;
 }
 .brand_identity__container {
-  width: 45% !important;
+  width: 45%;
   height: 100vh;
   background-color: #fff;
   flex-direction: column;
@@ -927,6 +924,9 @@ p {
 .brand_membership__description {
   padding-left: 30%;
 }
+.brand_membership__description p {
+  width: 30vw;
+}
 .brand_membership__container h3 {
   margin-top: 0%;
   margin-bottom: 10%;
@@ -953,7 +953,9 @@ p {
   align-items: flex-end;
   margin-left: 18.75rem;
 }
-
+.brand_branding__title h3 {
+  width: 40%;
+}
 .brand_branding__title span {
   font-family: 'Noto Sans KR',
     sans-serif;
@@ -1120,13 +1122,18 @@ body[data-aos-duration='4000']
   align-items: center;
 }
 .g-wrap {
-  width: 75% !important;
+  width: 80%;
   height: auto;
   display: block;
+  margin-left: 10vw;
 }
 .g-wrap h3 {
   margin-top: 15vh;
   margin-bottom: 3rem;
+}
+.g-wrap p {
+  width: 56.25rem;
+  word-break: keep-all;
 }
 .graph span {
   display: block;
@@ -1695,7 +1702,7 @@ input[type='checkbox']:checked
 /* 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width: 768px) and (max-width: 1024px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
   .recruitment__icon-container img {
     height: auto;
@@ -1712,7 +1719,7 @@ input[type='checkbox']:checked
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
 @media all and (min-width: 480px) and (max-width: 767px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
   .recruitment__icon-container img {
     height: auto;
@@ -1726,9 +1733,329 @@ input[type='checkbox']:checked
 /* 모바일 세로, 테블릿 세로 (해상도 ~ 479px)*/
 @media all and (max-width: 479px) {
   html {
-    font-size: 12px;
+    font-size: 5px;
+  }
+  h3 {
+    font-size: 4.5rem;
+  }
+  p {
+    font-size: 2.5rem;
+    color: #606060;
+  }
+  .header {
+    height: 10rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__nav {
+    display: flex;
+    align-content: center;
+    margin-right: 1rem;
+    opacity: 0.57;
+    font-family: 'Noto Sans KR',
+      sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #606060;
+    margin-left: 10rem;
+  }
+  .header__logo--image {
+    width: 5rem;
+    height: 4.538em;
+    background-image: url(img/logo1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+  .header__nav ul {
+    display: inline-flex;
+    width: auto;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  .header__nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem 0;
+  }
+  .header__nav button {
+    width: auto;
+    height: 5rem;
+    opacity: 0.34;
+    border-radius: 1.894rem;
+    border: solid 0.063rem #606060;
+    font-family: 'Noto Sans KR',
+      sans-serif;
+    font-size: 1.135em;
+    line-height: 1.916rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    /* margin-top: -0.438em; */
+    letter-spacing: normal;
+    text-align: center;
+    color: #606060;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    /* line-height: 2.67; */
   }
   .radio {
     width: 9.575em;
+  }
+  .header__align-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .header__descripton.page1 {
+    margin-left: 5%;
+    margin-top: 50%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__descripton.page1 > h2 {
+    font-size: 6rem;
+  }
+  .brand_identity__container {
+    width: 70%;
+    margin-right: 30%;
+  }
+  .brand__recruitment--container {
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .brand__recruitment {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: auto;
+  }
+  .brand_membership__description {
+    padding-left: 10%;
+  }
+  .g-wrap {
+    width: 90%;
+    height: auto;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .graph__wrap {
+    display: grid;
+    height: 50vh;
+    grid-template-columns: 1.5fr 0.67fr 1.5fr 0.3fr 1fr;
+    grid-template-rows: 10% 10% 20% 20%;
+    grid-template-areas:
+      'l . . . .'
+      'm1 g1 p83 . . '
+      'm2 g2 g2 g2 p100'
+      'bt des des des des';
+  }
+  .graph__logo {
+    background-position: 0 3rem;
+  }
+  .p100 {
+    display: flex;
+    align-self: center;
+    margin: 0;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-area: p100;
+  }
+  .brand_branding {
+    align-items: center;
+  }
+  .brand_branding__title {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0 3% 0;
+    align-items: center;
+    margin-left: 0%;
+    word-break: keep-all;
+    width: 50%;
+  }
+  .brand_branding__title h3 {
+    margin-bottom: 3rem;
+    width: 120%;
+    text-align: center;
+    font-size: 5.5rem;
+    line-height: 7rem;
+  }
+
+  .brand_branding__title span {
+    padding-right: 0;
+    width: 120%;
+    text-indent: 0.3rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .brand_branding__link {
+    height: 20%;
+  }
+  .brand_branding__button {
+    height: 75vh;
+  }
+  .footer__wrap.page1 {
+    height: 25vh;
+  }
+  .footer {
+    padding-top: 3.5vh;
+  }
+  .footer__nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 12.5rem;
+    grid-template-rows: 3.125rem repeat(
+        6,
+        2.5rem
+      );
+    grid-auto-flow: column;
+    grid-row-gap: 0em;
+  }
+  .phone {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    text-align: left;
+    color: #ffffff;
+  }
+  .company_name {
+    margin-bottom: 0.3rem;
+
+    font-size: 0.8rem;
+    font-weight: 300;
+
+    text-align: center;
+    color: #ffffff;
+    /* text-indent: -2px; */
+  }
+  .footer__address {
+    margin-left: 2rem;
+    width: 60vw;
+  }
+
+  .address {
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: left;
+    color: #ffffff;
+  }
+  .footer--mobile_grid {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+  }
+
+  .footer__nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__icon-container {
+    width: 100%;
+    margin-top: 10%;
+  }
+}
+@media all and (max-width: 321px) {
+  html {
+    font-size: 5px;
+  }
+  .header__nav {
+    margin-left: 0%;
+  }
+  .brand_identity__container {
+    padding-left: 4%;
+  }
+  .brand_identity__container p {
+    width: 96%;
+  }
+  .brand__recruitment--container {
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    height: 100vh;
+  }
+  .brand__recruitment {
+    width: 100vw;
+    height: 50vh;
+    margin-bottom: 15vh;
+  }
+  .brand__recruitment p {
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+  .brand__recruitment h3 {
+    margin-top: 10rem;
+  }
+  .brand_membership__description p {
+    width: 90%;
+  }
+  .brand_membership__container img {
+    margin-top: 10%;
+    width: 33rem;
+  }
+
+  .g-wrap {
+    width: 95%;
+  }
+  .g-wrap p {
+    width: 100%;
+  }
+  .graph__wrap {
+    display: grid;
+    height: 50vh;
+    grid-template-columns: 0.5fr 1fr 1.5fr 0.3fr 1fr;
+    grid-template-rows: 10% 20% 20% 20%;
+    grid-template-areas:
+      'l . . . .'
+      'm1 g1 p83 . . '
+      'm2 g2 g2 g2 p100'
+      'bt des des des des';
+  }
+  .graph__money {
+    padding-left: 5%;
+  }
+  .brand_branding__title h3 {
+    width: 150%;
+  }
+  .brand_branding__title span {
+    margin-bottom: 2rem;
+    width: 150%;
+  }
+  .brand_branding__button {
+    height: 60vh;
+  }
+  .footer__wrap.page1 {
+    height: 40vh;
+  }
+  .footer {
+    padding-top: 10%;
+  }
+  .copyright {
+    font-size: 0.5rem;
+    text-align: left;
   }
 }
