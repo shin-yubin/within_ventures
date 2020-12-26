@@ -1656,9 +1656,10 @@ input[type='checkbox']:checked
   .header__nav {
     margin-left: 30vw;
   }
+
   .recruitment__icon-container img {
     height: auto;
-    width: 30rem;
+    width: 30vw;
   }
   .radio_container.page3.q6 {
     grid-template-rows: repeat(
@@ -1675,6 +1676,24 @@ input[type='checkbox']:checked
     width: 28rem;
     height: auto;
     word-break: break-all;
+  }
+  .p100 {
+    margin: 0;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-area: p100;
+  }
+  .brand_branding__title {
+    padding: 3% 0 4% 0;
+  }
+  .brand_branding__title h3 {
+    width: 30%;
+    word-break: keep-all;
+  }
+  .brand_branding__title span {
+    width: 50vw;
   }
 }
 
