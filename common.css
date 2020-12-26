@@ -1829,7 +1829,9 @@ input[type='checkbox']:checked
   .brand_identity__container {
     width: 70%;
     margin-right: 30%;
+    padding-left: 5%;
   }
+
   .brand__recruitment--container {
     overflow: visible;
     display: flex;
