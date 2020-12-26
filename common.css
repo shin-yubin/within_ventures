@@ -2183,7 +2183,7 @@ input[type='checkbox']:checked
     width: 20rem;
     height: 10rem;
     font-size: 2.5rem;
-    border-radius: 5rem;
+    border-radius: 4.5rem;
   }
   .agreement_container {
     display: grid;
@@ -2315,7 +2315,7 @@ input[type='checkbox']:checked
   .application_acceptance__info {
     width: 35.3125%;
     margin-right: 4.2343749999999996%;
-    margin-left: 12.057291666666666%;
+    margin-left: 6vw;
   }
   .application_acceptance--input--question.form
     h5 {
