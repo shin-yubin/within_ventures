@@ -1839,12 +1839,6 @@ input[type='checkbox']:checked
     height: 100vh;
   }
   .brand__recruitment {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    width: auto;
   }
   .brand_membership__description {
     padding-left: 10%;
@@ -1856,6 +1850,7 @@ input[type='checkbox']:checked
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 0;
   }
   .graph__wrap {
     display: grid;
@@ -1994,14 +1989,19 @@ input[type='checkbox']:checked
     overflow: visible;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     width: 100vw;
     height: 100vh;
   }
   .brand__recruitment {
     width: 100vw;
     height: 50vh;
-    margin-bottom: 15vh;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      1
+    );
   }
   .brand__recruitment p {
     margin-bottom: 3rem;
