@@ -1648,6 +1648,14 @@ input[type='checkbox']:checked
   html {
     font-size: 10px;
   }
+  .header__align-items {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+  }
+  .header__nav {
+    margin-left: 30vw;
+  }
   .recruitment__icon-container img {
     height: auto;
     width: 30rem;
@@ -1675,6 +1683,34 @@ input[type='checkbox']:checked
   html {
     font-size: 12px;
   }
+  .header__align-items {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+  }
+  .header__nav {
+    margin-left: 30vw;
+  }
+  .header__nav ul {
+    width: 35vw;
+    margin: 0 2.563em 0 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-right: 5rem;
+  }
+  .header__nav ul li {
+    margin-left: 1rem;
+  }
+  .header__nav button {
+    width: auto;
+    height: 3.816rem;
+    opacity: 0.5;
+    font-family: 'Noto Sans KR',
+      sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
   .recruitment__icon-container img {
     height: auto;
     width: 28.125rem;
@@ -1697,7 +1733,34 @@ input[type='checkbox']:checked
   html {
     font-size: 10px;
   }
-
+  .header__align-items {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+  }
+  .header__nav {
+    margin-left: 30vw;
+  }
+  .header__nav ul {
+    width: 35vw;
+    margin: 0 2.563em 0 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-right: 5rem;
+  }
+  .header__nav ul li {
+    margin-left: 1rem;
+  }
+  .header__nav button {
+    width: auto;
+    height: 3.816rem;
+    opacity: 0.5;
+    font-family: 'Noto Sans KR',
+      sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
   .recruitment__icon-container img {
     height: auto;
     width: 25rem;
