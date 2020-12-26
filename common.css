@@ -1836,7 +1836,7 @@ input[type='checkbox']:checked
     overflow: visible;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
   }
