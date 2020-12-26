@@ -1706,22 +1706,184 @@ input[type='checkbox']:checked
     width: 9.575em;
   }
   .application_acceptance {
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+  .move-in-procedure__icon--wrap img {
+    width: 88vw;
   }
 }
 
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
-@media all and (min-width: 480px) and (max-width: 767px) {
+@media all and (min-width: 480px) and (max-width: 768px) {
   html {
     font-size: 10px;
   }
-
+  .header__descripton {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10vw;
+    margin-top: 20vh;
+  }
   .recruitment__icon-container img {
     height: auto;
     width: 12.5rem;
   }
   .radio {
     width: 9.575em;
+  }
+  .application_acceptance {
+    width: 100vw;
+    height: auto;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-top: 5%;
+  }
+
+  .application_acceptance__info {
+    width: 100vw;
+    margin-right: 1%;
+    margin-left: 7%;
+    margin-bottom: 15%;
+  }
+  .application_acceptance__info h3 {
+    height: auto;
+    margin: 0 2rem 4rem 0.25rem;
+    font-size: 5rem;
+    line-height: 6rem;
+    width: 50vw;
+    /*font-size: 2.938rem;*/
+  }
+  .application_acceptance__info p {
+    width: 100vw;
+    height: 5rem;
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    word-break: keep-all;
+    word-wrap: break-word;
+  }
+  .application_acceptance__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .radio_container.page3 {
+    width: 90%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(
+      4,
+      1fr
+    );
+    row-gap: 2.25rem;
+    grid-auto-flow: row;
+    grid-column-gap: 0.875rem;
+  }
+  .radio_container.page3.age {
+    height: auto;
+    grid-template-rows: 1fr;
+    margin-bottom: 1rem;
+  }
+  .radio_container.page3.q6 {
+    grid-template-rows: repeat(
+      2,
+      0.5fr
+    );
+    grid-template-columns: repeat(
+      4,
+      1fr
+    );
+    grid-auto-flow: row;
+    row-gap: 1.25rem;
+    margin-bottom: 5.75rem;
+  }
+  input[type='radio'] + label:before {
+    height: 3rem;
+    width: 3rem;
+  }
+  .form input,
+  .tel input {
+    border: none;
+    border-radius: 0;
+    width: 45rem;
+    height: 5rem;
+    opacity: 0.52;
+    background-color: #52c3dd;
+  }
+  .radio_container {
+    display: grid;
+    width: 88vw;
+  }
+  .radio_container {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(
+      2,
+      1fr
+    );
+    grid-auto-flow: column;
+  }
+  label {
+    font-size: 2.3rem;
+    width: 44vw;
+  }
+  .application_acceptance--input--question {
+    width: 88vw;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  .application_acceptance--input--question.form {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .application_acceptance--input--question
+    h5 {
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-bottom: 3rem;
+  }
+  .application_acceptance--input--question.form
+    h5 {
+    margin-bottom: 0;
+  }
+  .application_acceptance--input--question
+    .form {
+    display: block;
+  }
+  .move-in-procedure__icon--wrap img {
+    width: 90vw;
+  }
+  .application_acceptance__button {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .application_acceptance__button
+    button {
+    width: 20rem;
+    height: 10rem;
+    font-size: 2.5rem;
+    border-radius: 4.5rem;
+  }
+  .agreement_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer__icon-container {
+    display: inline-flex;
+    width: 30vw;
+    height: 100%;
+    justify-content: flex-end;
+  }
+  .application_acceptance__button
+    button {
+    margin: 5.438rem 0 8.188rem 0;
   }
 }
 
