@@ -1850,6 +1850,9 @@ input[type='checkbox']:checked
       1
     );
   }
+  .brand__recruitment p {
+    text-indent: 1rem;
+  }
   .brand_membership__description {
     padding-left: 10%;
   }
