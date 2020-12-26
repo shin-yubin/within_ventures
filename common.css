@@ -2284,11 +2284,32 @@ input[type='checkbox']:checked
     height: 40vh;
   }
   .footer {
-    padding-top: 10%;
+    padding-top: 5%;
+  }
+  .phone {
+    margin: 1rem 0 3rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    width: 100%;
+  }
+  .address {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: left;
+    color: #ffffff;
+    width: 80%;
   }
   .copyright {
     font-size: 0.5rem;
     text-align: left;
+  }
+  .company_name {
+    margin: 0 0 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: center;
+    color: #ffffff;
   }
 
   .application_acceptance__info {
