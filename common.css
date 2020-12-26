@@ -741,6 +741,7 @@ p {
   letter-spacing: normal;
   text-align: left;
   color: #444444;
+  word-break: keep-all;
 }
 
 .application_acceptance--input--question {
@@ -1370,23 +1371,6 @@ body[data-aos-duration='4000']
   display: flex;
 
 }*/
-.tel input {
-  border: none;
-  border-radius: 0;
-  width: 34.39375rem;
-  /* width: 144.6px;*/
-  /* 9.875rem;*/
-  height: 3.813rem;
-  opacity: 0.52;
-  background-color: #52c3dd;
-  margin: 0;
-}
-.tel {
-  display: flex;
-  width: 34.39375rem;
-  justify-content: space-between;
-  justify-content: space-between;
-}
 
 .etc input {
   width: 17.1rem;
@@ -1944,7 +1928,7 @@ input[type='checkbox']:checked
     height: 30vh;
   }
   .footer {
-    padding-top: 3.5vh;
+    padding-top: 6%;
   }
   .footer__nav ul {
     list-style: none;
@@ -1965,27 +1949,28 @@ input[type='checkbox']:checked
     background-image: url(img/logo4.png);
     background-size: 45%;
     background-repeat: no-repeat;
-    width: 100rem;
+    width: 95rem;
     height: 6.9rem;
   }
   .phone {
-    margin: 3rem 0;
+    margin: 3rem 0 3rem;
     font-size: 0.8rem;
     font-weight: 400;
     width: 80%;
   }
+
   .email > img {
     width: 3rem;
     height: 3rem;
     margin: 0 1.5rem 0 1rem;
   }
+
   .company_name {
-    margin: 3rem 0;
+    margin: 3rem 0 1.5rem;
     font-size: 0.8rem;
     font-weight: 300;
     text-align: center;
     color: #ffffff;
-    /* text-indent: -2px; */
   }
   .footer__address {
     margin-left: 2rem;
@@ -2021,6 +2006,142 @@ input[type='checkbox']:checked
     width: 5rem;
     height: 5rem;
     flex-direction: row;
+  }
+  /*common*/
+  .application_acceptance {
+    width: 100vw;
+    height: auto;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-top: 5%;
+  }
+
+  .application_acceptance__info {
+    width: 100vw;
+    margin-right: 1%;
+    margin-left: 7%;
+    margin-bottom: 15%;
+  }
+  .application_acceptance__info h3 {
+    height: auto;
+    margin: 0 2rem 4rem 0.25rem;
+    font-size: 5rem;
+    line-height: 6rem;
+
+    /*font-size: 2.938rem;*/
+  }
+  .application_acceptance__info p {
+    width: 100vw;
+    height: 5rem;
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    word-break: keep-all;
+    word-wrap: break-word;
+  }
+  .application_acceptance__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .radio_container.page3 {
+    width: 90%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(
+      4,
+      1fr
+    );
+    row-gap: 2.25rem;
+    grid-auto-flow: row;
+    grid-column-gap: 0.875rem;
+  }
+  .radio_container.page3.age {
+    height: auto;
+    grid-template-rows: 1fr;
+    margin-bottom: 1rem;
+  }
+  .radio_container.page3.q6 {
+    grid-template-rows: repeat(
+      2,
+      0.5fr
+    );
+    grid-template-columns: repeat(
+      4,
+      1fr
+    );
+    grid-auto-flow: row;
+    row-gap: 1.25rem;
+    margin-bottom: 5.75rem;
+  }
+  input[type='radio'] + label:before {
+    height: 3rem;
+    width: 3rem;
+  }
+  .form input {
+    border: none;
+    border-radius: 0;
+    width: 45rem;
+    height: 5rem;
+    opacity: 0.52;
+    background-color: #52c3dd;
+  }
+  label {
+    font-size: 2.3rem;
+  }
+  .application_acceptance--input--question {
+    width: 88vw;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  .application_acceptance--input--question.form {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .application_acceptance--input--question
+    h5 {
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-bottom: 3rem;
+  }
+  .application_acceptance--input--question.form
+    h5 {
+    margin-bottom: 0;
+  }
+  .application_acceptance--input--question
+    .form {
+    display: inline-block;
+  }
+  .move-in-procedure__icon--wrap img {
+    width: 90vw;
+  }
+  .application_acceptance__button {
+    width: 88vw;
+    display: flex;
+    justify-content: center;
+  }
+  .application_acceptance__button
+    button {
+    width: 20rem;
+    height: 10rem;
+    font-family: 'Noto Sans KR',
+      sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.72;
+    letter-spacing: normal;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border-radius: 2.5rem;
+    padding: 0 0.625rem;
+    margin: 5.438rem 0em 8.188rem 0;
   }
 }
 @media all and (max-width: 320px) {
@@ -2108,5 +2229,11 @@ input[type='checkbox']:checked
   .copyright {
     font-size: 0.5rem;
     text-align: left;
+  }
+
+  .application_acceptance__info {
+    width: 35.3125%;
+    margin-right: 4.2343749999999996%;
+    margin-left: 12.057291666666666%;
   }
 }
