@@ -182,7 +182,7 @@
       <div class="section" id="place">
         <div class="brand_identity">
           <div
-            class="brand_identity__container section"
+            class="brand_identity__container"
           >
             <h3>
               공간과 사람을<br />
@@ -337,31 +337,33 @@
                 id="elem"
               >
                 <div
-                  class="graph stack1"
+                  class="graph_container stack1 graphStack1 changing"
                 >
                   <span
-                    class="graph stack1"
+                    class= stack1"
                   ></span>
-                </div>
 
+                  <div
+                    class="percentage p83"
+                  >
+                    83%
+                  </div>
+                </div>
                 <div
-                  class="graph stack2"
+                  class="graph_container stack2 graphStack2 changing"
                 >
                   <span
-                    class="graph stack1"
+                    class="stack1"
                   ></span>
+
+                  <div
+                    class="percentage p100"
+                  >
+                    100%
+                  </div>
                 </div>
               </div>
-              <span
-                class="percentage p83"
-              >
-                83%
-              </span>
-              <span
-                class="percentage p100"
-              >
-                100%
-              </span>
+
               <div
                 class="discription__button"
               >
@@ -593,6 +595,17 @@
       });
     </script>
     <script>
+      function play() {
+  document.querySelector(".graphStack1").className = "graphStack1";
+  windowc(function(time) {
+    window.requestAnimationFrame(function(time) {
+      document.querySelector(".graphStack1").className = "graphStack1 changing";
+    });
+  });
+}
+
+document.querySelector(".runButton").addEventListener("click", play, false);
+
       AOS.init();
       AOS.init({
         duration: 1000,

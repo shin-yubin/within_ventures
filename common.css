@@ -884,7 +884,7 @@ p {
 .brand_identity {
   width: 100vw;
   height: 100vh;
-  background-image: url(img/cloud.jpg);
+  background-image: url(img/cloud.jpg) !important;
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
@@ -898,6 +898,7 @@ p {
   align-content: center;
   margin-right: 50%;
   padding-left: 10%;
+  display: flex;
 }
 .brand_identity__container h3 {
   margin-bottom: 3.125rem;
@@ -1136,8 +1137,21 @@ body[data-aos-duration='4000']
   width: 56.25rem;
   word-break: keep-all;
 }
-.graph span {
-  display: block;
+.graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.graph_container {
+  display: flex;
+  width: 40vw;
+  /* height: 5.3625rem;*/
+}
+.graph_container:nth-child(1) {
+  padding-bottom: 7.75rem;
+}
+.graph_container span {
+  display: inline-block;
   height: 5.3625rem;
   line-height: 2.5rem;
   text-align: right;
@@ -1156,7 +1170,7 @@ body[data-aos-duration='4000']
 .stack2 span {
   animation: stack2 2s 1;
   width: 100%;
-  margin-top: 7.75rem;
+
   grid-area: g2;
 }
 @keyframes stack1 {
@@ -1240,8 +1254,8 @@ body[data-aos-duration='4000']
   grid-template-rows: 20% 20% 20% 20%;
   grid-template-areas:
     'l . . . .'
-    'm1 g1 p83 . . '
-    'm2 g2 g2 g2 p100'
+    'm1 g1 g1 . . '
+    'm2 g2 g2 g2 g2'
     'bt . des des des';
 }
 .graph__logo {
@@ -1261,25 +1275,27 @@ body[data-aos-duration='4000']
 }
 .graph {
   width: 100%;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 4;
 }
 .percentage {
-  display: flex;
+  display: inline-flex;
   width: 7.125rem;
-  height: 5rem;
-  font-family: NotoSansKR;
+  height: 5.3625rem;
+  font-family: 'Noto Sans KR';
   font-size: 3.744rem;
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
-
   letter-spacing: normal;
   text-align: left;
   color: #000000;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
 }
 .p83 {
   grid-column-start: 4;
@@ -1289,7 +1305,6 @@ body[data-aos-duration='4000']
   grid-area: p83;
 }
 .p100 {
-  margin: 4.075rem 0;
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 3;
@@ -1321,6 +1336,7 @@ body[data-aos-duration='4000']
   grid-row-start: 4;
   grid-row-end: 5;
   grid-area: bt;
+  cursor: pointer;
 }
 .discription__button #button {
   width: auto;
@@ -2140,8 +2156,8 @@ input[type='checkbox']:checked
     grid-template-rows: 10% 10% 20% 20%;
     grid-template-areas:
       'l . . . .'
-      'm1 g1 p83 . . '
-      'm2 g2 g2 g2 p100'
+      'm1 g1 g1 . . '
+      'm2 g2 g2 g2 g2'
       'bt des des des des';
   }
   .g-wrap p {
@@ -2156,7 +2172,7 @@ input[type='checkbox']:checked
   }
   .p100 {
     display: flex;
-    align-self: center;
+
     margin: 0;
     grid-column-start: 4;
     grid-column-end: 5;
@@ -2493,8 +2509,8 @@ input[type='checkbox']:checked
     grid-template-rows: 10% 20% 20% 20%;
     grid-template-areas:
       'l . . . .'
-      'm1 g1 p83 . . '
-      'm2 g2 g2 g2 p100'
+      'm1 g1 g1 . . '
+      'm2 g2 g2 g2 g2'
       'bt des des des des';
   }
   .graph__logo {
