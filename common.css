@@ -1170,7 +1170,6 @@ body[data-aos-duration='4000']
 .stack2 span {
   animation: stack2 2s 1;
   width: 100%;
-
   grid-area: g2;
 }
 @keyframes stack1 {
@@ -1338,7 +1337,7 @@ body[data-aos-duration='4000']
   grid-area: bt;
   cursor: pointer;
 }
-.discription__button #button {
+.discription__button #stackG {
   width: auto;
   height: 15rem;
   text-align: center;
@@ -1981,7 +1980,7 @@ input[type='checkbox']:checked
   }
   .application_acceptance__button
     button {
-    margin: 5.438rem 0 8.188rem 0;
+    margin: 0;
   }
 }
 

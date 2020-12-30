@@ -79,6 +79,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/aos@next/dist/aos.css"
@@ -86,7 +89,10 @@
   </head>
   <body class="page1">
     <div id="fullpage">
-      <div class="section">
+      <div
+        class="section"
+        data-anchor="page1"
+      >
         <div class="header__wrap">
           <div class="header">
             <div
@@ -109,8 +115,7 @@
               <div class="header__nav">
                 <ul>
                   <li>
-                    <a
-                      href="index.html#tenant_industry"
+                    <a href="#page2"
                       >입주업종</a
                     >
                   </li>
@@ -118,17 +123,17 @@
                     <div
                       class="dots-flex"
                     >
-                      <a
-                        href="index.html#place"
-                      >
+                      <a href="#page5">
                         <span
                           >공간</span
                         >
                       </a>
-                      <div
-                        class="dots_image"
-                      ></div>
                     </div>
+                  </li>
+                  <li>
+                    <div
+                      class="dots_image"
+                    ></div>
                   </li>
                   <li>
                     <button>
@@ -165,12 +170,7 @@
           <div
             class="header__descripton page1"
           >
-            <h2
-              data-aos="fade-up"
-              data-aos-delay=" 3000 "
-              data-aos-duration=" 3000 "
-              data-aos-easing=" ease-in-out "
-            >
+            <h2>
               WE’LL SPACE.
               <br />
               YOU’LL BEAUTY STAR.
@@ -179,7 +179,11 @@
         </div>
         <!--header-->
       </div>
-      <div class="section" id="place">
+      <div
+        class="section"
+        id="place"
+        data-anchor="page2"
+      >
         <div class="brand_identity">
           <div
             class="brand_identity__container"
@@ -197,7 +201,10 @@
           </div>
         </div>
       </div>
-      <div class="section">
+      <div
+        class="section"
+        data-anchor="page3"
+      >
         <div
           class="brand__recruitment--container"
         >
@@ -234,7 +241,10 @@
           </div>
         </div>
       </div>
-      <div class="section">
+      <div
+        class="section"
+        data-anchor="page4"
+      >
         <div
           class="brand_membership"
           id="service"
@@ -267,7 +277,11 @@
           </div>
         </div>
       </div>
-      <div class="section" id="#graph">
+      <div
+        class="section"
+        id="#graph"
+        data-anchor="page5"
+      >
         <div class="G-wrap">
           <div class="g-wrap">
             <div class="text">
@@ -332,30 +346,26 @@
                   >
                 </div>
               </div>
-              <div
-                class="graph"
-                id="elem"
-              >
+              <div class="graph">
                 <div
-                  class="graph_container stack1 graphStack1 changing"
+                  class="graph_container stack1 graphStack1 run-animation"
                 >
                   <span
-                    class= stack1"
+                    class="run-animation"
                   ></span>
 
                   <div
-                    class="percentage p83"
+                    class="percentage p83" 
                   >
                     83%
                   </div>
                 </div>
                 <div
-                  class="graph_container stack2 graphStack2 changing"
+                  class="graph_container stack2 graphStack2 run-animation"
                 >
                   <span
-                    class="stack1"
+                    class="run-animation"
                   ></span>
-
                   <div
                     class="percentage p100"
                   >
@@ -363,13 +373,12 @@
                   </div>
                 </div>
               </div>
-
               <div
                 class="discription__button"
               >
                 <div
-                  id="button"
-                  onclick="copyURL()"
+                  class="button discription__button"
+                  id="stackG"
                 ></div>
               </div>
               <p
@@ -385,7 +394,10 @@
           </div>
         </div>
       </div>
-      <div class="section">
+      <div
+        class="section"
+        data-anchor="page6"
+      >
         <div
           class="brand_branding"
           id="branding"
@@ -444,7 +456,10 @@
           </div>
         </div>
       </div>
-      <div class="section">
+      <div
+        class="section"
+        data-anchor="page7"
+      >
         <div class="footer-flex page1">
           <div
             class="brand_branding__button"
@@ -521,31 +536,36 @@
                     </li>
                     <li>
                       <a
-                        href="index.html#place"
+                        href="#page1"
+                        class="nav__item active"
                         >회사 소개</a
                       >
                     </li>
                     <li>
                       <a
-                        href="index.html#tenant_industry"
+                        href="#page2"
+                        class="nav__item"
                         >입주 업종</a
                       >
                     </li>
                     <li>
                       <a
-                        href="index.html#service"
+                        href="#page3"
+                        class="nav__item"
                         >서비스</a
                       >
                     </li>
                     <li>
                       <a
-                        href="index.html#graph"
+                        href="#page4"
+                        class="nav__item"
                         >비용 절감</a
                       >
                     </li>
                     <li>
                       <a
-                        href="index.html#branding"
+                        href="#page5"
+                        class="nav__item"
                         >공간</a
                       >
                     </li>
@@ -580,89 +600,44 @@
       </div>
     </div>
     <!--footer-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      $('#fullpage').fullpage({
-        anchors: [
-          '#place',
-          '#service',
-          '#graph',
-          '#branding',
-          '#tenant_industry',
-        ],
-      });
-    </script>
-    <script>
-      function play() {
-  document.querySelector(".graphStack1").className = "graphStack1";
-  windowc(function(time) {
-    window.requestAnimationFrame(function(time) {
-      document.querySelector(".graphStack1").className = "graphStack1 changing";
-    });
-  });
-}
-
-document.querySelector(".runButton").addEventListener("click", play, false);
-
-      AOS.init();
-      AOS.init({
-        duration: 1000,
-        offset: 120,
-        easing: 'ease-in-out',
-      });
-      new fullpage('.fullpage', {
-        //.............................................
-        //....Your other options....
-        //..............................................
-        onLeave: function () {
-          jQuery(
-            '.section [data-aos]'
-          ).removeClass('aos-animate');
-        },
-        onSlideLeave: function () {
-          jQuery(
-            '.slide [data-aos]'
-          ).removeClass('aos-animate');
-        },
-        afterSlideLoad: function () {
-          jQuery(
-            '.slide.active [data-aos]'
-          ).addClass('aos-animate');
-        },
-        afterLoad: function () {
-          jQuery(
-            '.section.active [data-aos]'
-          ).addClass('aos-animate');
-          //jQuery('.fp-table.active .aos-init').addClass('aos-animate');
-        },
-      });
+      ('use strict');
       new fullpage('#fullpage', {
-        afterRender: function () {
-          var pluginContainer = this;
-          alert(
-            'The resulting DOM structure is ready'
+        anchors: [
+          'firstPage',
+          'secondPage',
+          'thirdPage',
+        ],
+      }); // This changes everything
+      /*fullpage*/
+      // retrieve the element
+      var element = document.getElementById(
+        'buttonG'
+      );
+      // reset the transition by...
+      element.addEventListener(
+        'click',
+        function (e) {
+          e.preventDefault;
+
+          // -> removing the class
+          element.classList.remove(
+            'run-animation'
+          );
+
+          // -> triggering reflow /* The actual magic */
+          // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
+          // This was, from the original tutorial, will no work in strict mode. Thanks Felis Phasma! The next uncommented line is the fix.
+          // element.offsetWidth = element.offsetWidth;
+
+          void element.offsetWidth;
+
+          // -> and re-adding the class
+          element.classList.add(
+            'run-animation'
           );
         },
-      });
-      $('a[href^="#"]').click(
-        function () {
-          var the_id = $(this).attr(
-            'href'
-          );
-
-          $('html, body').animate(
-            {
-              scrollTop: $(
-                the_id
-              ).offset().top,
-            },
-            'slow'
-          );
-
-          return false;
-        }
+        false
       );
     </script>
   </body>
