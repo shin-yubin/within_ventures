@@ -202,6 +202,9 @@
               브랜딩하는
               공유뷰티샵입니다.
             </p>
+            <div class="apply-button">
+              신청하기
+            </div>
           </div>
         </div>
       </div>
@@ -241,6 +244,9 @@
                 />
               </div>
             </div>
+            <div class="apply-button">
+              신청하기
+            </div>
             <!--recruitment_icon-->
           </div>
         </div>
@@ -260,7 +266,7 @@
               class="brand_membership__description"
             >
               <h3>
-                당신이 누릴 수 있는<br />
+                당신이 누릴 수 있는
                 멤버쉽의 모든 것.
               </h3>
               <p>
@@ -278,6 +284,9 @@
                 src="img/2.png"
                 alt=""
               />
+            </div>
+            <div class="apply-button">
+              신청하기
             </div>
           </div>
         </div>
@@ -395,6 +404,15 @@
                 <br />일반적인 창업시
                 들어가는 비용 산출
               </p>
+              <div
+                class="apply-button__flex"
+              >
+                <div
+                  class="apply-button graph-apply-button"
+                >
+                  신청하기
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -453,28 +471,9 @@
                   alt=""
                 />
               </div>
-
               <div>
                 <img
-                  src="img/slider_1.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  src="img/slider_2.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  src="img/slider_3.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  src="img/slider_4.jpg"
+                  src="img/slider_5.jpg"
                   alt=""
                 />
               </div>
@@ -485,7 +484,12 @@
           >
             <div class="box_container">
               <div class="box">
-                가로수길점
+                <span class="before">
+                  가로수길점</span
+                >
+                <span class="hover"
+                  >오픈 예정</span
+                >
                 <div class="blue-box">
                   <a href="#"
                     >오픈<br />예정</a
@@ -493,7 +497,12 @@
                 </div>
               </div>
               <div class="box">
-                청담점
+                <span class="before"
+                  >청담점</span
+                >
+                <span class="hover"
+                  >오픈 예정</span
+                >
                 <div class="blue-box">
                   <a href="#"
                     >오픈<br />예정</a
@@ -501,7 +510,12 @@
                 </div>
               </div>
               <div class="box">
-                압구정점
+                <span class="before">
+                  압구정점</span
+                >
+                <span class="hover"
+                  >오픈 예정</span
+                >
                 <div class="blue-box">
                   <a href="#"
                     >오픈<br />예정</a
@@ -529,7 +543,7 @@
           <div
             class="footer__wrap page1"
           >
-            <div class="footer">
+            <div class="footer web">
               <div
                 class="footer__address"
               >
@@ -651,6 +665,103 @@
                 </div>
               </div>
             </div>
+            <div class="footer mobile">
+              <div
+                class="footer--mobile_grid"
+              >
+                <div
+                  class="footer__nav"
+                >
+                  <ul>
+                    <li>
+                      <div
+                        class="footer__nav--title"
+                      >
+                        Site map
+                      </div>
+                    </li>
+                    <li>
+                      <a
+                        href="#page1"
+                        class="nav__item active"
+                        >회사 소개</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#page2"
+                        class="nav__item"
+                        >입주 업종</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#page3"
+                        class="nav__item"
+                        >서비스</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#page4"
+                        class="nav__item"
+                        >비용 절감</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#page5"
+                        class="nav__item"
+                        >공간</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="partnership.html"
+                        >제휴문의</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="footer__address"
+                >
+                  Tel. 010-9111-1926/ AM
+                  10:00 – PM 08:30 / Off
+                  - time PM 08:30 - AM
+                  10:00
+                  admin@withinshop.com
+                  www.withinshop.com
+                  주식회사 위드 인
+                  벤처스 | 대표자 :
+                  권혜진 ( 06192 )
+                  서울시 강남구 선릉로
+                  428 위워크 선릉 3호점
+                </div>
+                <div
+                  class="footer__icon-container"
+                >
+                  <div
+                    class="footer__icon facebook"
+                  ></div>
+                  <div
+                    class="footer__icon youtube"
+                  ></div>
+                  <div
+                    class="footer__icon behance"
+                  ></div>
+                  <div
+                    class="footer__icon instagram"
+                  ></div>
+                </div>
+                <span class="copyright"
+                  >Copyright,
+                  withinventures Corp.
+                  All right
+                  reserved.</span
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -675,9 +786,11 @@
       /*fullpage*/
       // retrieve the element
       $('.responsive').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
         dots: false,
         infinite: true,
-        speed: 400,
+        speed: 600,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
@@ -693,10 +806,10 @@
             },
           },
           {
-            breakpoint: 600,
+            breakpoint: 800,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToScroll: 1,
               infinite: true,
               variableWidth: false,
               dots: false,
