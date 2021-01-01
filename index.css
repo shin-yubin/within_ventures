@@ -1190,40 +1190,6 @@ body[data-aos-duration='4000']
   animation: stack1 2s 1;
   position: relative;
 }
-.stack1 span {
-  animation: stack1 2s 1;
-  width: 27%;
-  grid-area: g1;
-}
-.stack2 span {
-  animation: stack2 2s 1;
-  width: 100%;
-  grid-area: g2;
-}
-@keyframes stack1 {
-  0% {
-    width: 100%;
-    color: rgba(255, 255, 255, 0);
-  }
-  50% {
-    color: rgba(0, 0, 0, 1);
-  }
-  100% {
-    width: 27%;
-  }
-}
-@keyframes stack2 {
-  0% {
-    width: 0%;
-    color: rgba(255, 255, 255, 0);
-  }
-  50% {
-    color: rgba(0, 0, 0, 1);
-  }
-  100% {
-    width: 100%;
-  }
-}
 .graph__money {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -1365,17 +1331,7 @@ body[data-aos-duration='4000']
   grid-area: bt;
   cursor: pointer;
 }
-.discription__button #stackG {
-  width: auto;
-  height: 15rem;
-  text-align: center;
-  margin-top: 4.431rem;
-  margin-left: 20%;
-  background-image: url(img/replay.png);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  border: none;
-}
+
 .icon__membership {
   width: 11.25rem;
   height: 11.25rem;

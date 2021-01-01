@@ -12,7 +12,53 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>WITHIN-BEAUTY</title>
+    <style>
+      #stack1 span {
+        animation: stack1 2s 1 infinite;
+        animation-delay: 0;
+        width: 27%;
+        grid-area: g1;
+      }
+      #stack2 span {
+        animation: stack2 2s 1 infinite;
+        animation-delay: 0;
+        width: 100%;
+        grid-area: g2;
+      }
 
+      @keyframes stack1 {
+        from {
+          width: 500px;
+          color: rgba(255, 255, 255, 0);
+        }
+
+        to {
+          width: 27px;
+        }
+      }
+      @keyframes stack2 {
+        from {
+          width: 0%;
+          color: rgba(255, 255, 255, 0);
+        }
+
+        to {
+          width: 500px;
+        }
+      }
+      .discription__button.button {
+        width: 10rem;
+        height: 5rem;
+        text-align: center;
+        margin-top: 4.431rem;
+        margin-left: 20%;
+        background-image: url(img/replay.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+      }
+    </style>
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
@@ -33,7 +79,6 @@
       href="https://unpkg.com/aos@2.3.1/dist/aos.css"
       rel="stylesheet"
     />
- 
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link
       href="http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700"
@@ -66,7 +111,7 @@
         <div class="header__wrap">
           <div class="header">
             <div
-              class="header__align-items"  data-aos-anchor = " .other-element "
+              class="header__align-items"
             >
               <div class="header__logo">
                 <span>
@@ -139,17 +184,15 @@
         >
           <div
             class="header__descripton page1"
+            data-aos="fade-up"
+            data-aos-anchor=" #mainTitle "
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
           >
-            <h2
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="0"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-mirror="true"
-              data-aos-once="false"
-              data-aos-anchor-placement="top-center"
-            >
+            <h2 id="mainTitle">
               WE’LL SPACE.
               <br />
               YOU’LL BEAUTY STAR.
@@ -196,7 +239,6 @@
               브랜딩하는
               공유뷰티샵입니다.
             </p>
-            
           </div>
         </div>
       </div>
@@ -320,27 +362,27 @@
               <div class="graph__wrap">
                 <div
                   class="graph__logo"
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
                 ></div>
                 <div
                   class="graph__money"
                 >
                   <div
                     class="graph__money1"
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
                   >
                     <span
                       class="graph__money__span"
-                      data-aos="fade-up"
-                      data-aos-delay="50"
-                      data-aos-duration="1000"
                       >창업비
                       <strong
                         >523만원</strong
                       ></span
                     ><br /><span
                       class="graph__money__span"
-                      data-aos="fade-up"
-                      data-aos-delay="50"
-                      data-aos-duration="1000"
                       >유지비
                       <strong
                         >126만원</strong
@@ -349,30 +391,23 @@
                   </div>
                   <div
                     class="graph__money2"
+                    class="graph2_title_bold"
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
                   >
-                    <div
-                      class="graph2_title_bold"
-                      data-aos="fade-up"
-                      data-aos-delay="50"
-                      data-aos-duration="1000"
-                    >
+                    <div>
                       일반창업시
                     </div>
 
                     <span
                       class="graph__money__span"
-                      data-aos="fade-up"
-                      data-aos-delay="50"
-                      data-aos-duration="1000"
                       >창업비
                       <strong
                         >3,570만원</strong
                       ></span
                     ><br /><span
                       class="graph__money__span"
-                      data-aos="fade-up"
-                      data-aos-delay="50"
-                      data-aos-duration="1000"
                       >유지비
                       <strong
                         >234만원</strong
@@ -380,9 +415,14 @@
                     >
                   </div>
                 </div>
-                <div class="graph">
+                <div
+                  class="graph"
+                  id="elem"
+                >
                   <div
-                    class="graph_container stack1 graphStack1 run-animation"
+                    data-percentage="27"
+                    id="stack1"
+                    class="bar graph_container stack1 graphStack1 run-animation"
                   >
                     <span
                       class="run-animation"
@@ -395,7 +435,9 @@
                     </div>
                   </div>
                   <div
-                    class="graph_container stack2 graphStack2 run-animation"
+                    id="stack2"
+                    data-percentage="100"
+                    class="bar graph_container stack2 graphStack2 run-animation"
                   >
                     <span
                       class="run-animation"
@@ -410,10 +452,12 @@
                 <div
                   class="discription__button"
                 >
-                  <div
+                  <button
                     class="button discription__button"
-                    id="stackG"
-                  ></div>
+                    id="btn"
+                    class="toggleButton"
+                    value="play"
+                  ></button>
                 </div>
                 <p
                   class="discription__text"
@@ -457,345 +501,88 @@
               >
             </div>
             <div
-              class="brand_branding__slider" data-aos="fade-up" data-aos-delay="50"
-              data-aos-duration="1000""
-            >
-              <div
-                class="slider responsive variable-width"
-              >
-                <div>
-                  <img
-                    src="img/slider_1.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/slider_2.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/slider_3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/slider_4.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/slider_5.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
+            class="brand_branding__slider"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"" >
             <div
-              class="brand_branding__link"
+              class="slider responsive variable-width"
             >
-              <div
-                class="box_container"
-                data-aos="fade-up"
-              >
-                <div class="box">
-                  <span class="before">
-                    가로수길점</span
-                  >
-                  <span class="hover"
-                    >오픈 예정</span
-                  >
-                  <div class="blue-box">
-                    <a href="#"
-                      >오픈<br />예정</a
-                    >
-                  </div>
-                </div>
-                <div class="box">
-                  <span class="before"
-                    >청담점</span
-                  >
-                  <span class="hover"
-                    >오픈 예정</span
-                  >
-                  <div class="blue-box">
-                    <a href="#"
-                      >오픈<br />예정</a
-                    >
-                  </div>
-                </div>
-                <div class="box">
-                  <span class="before">
-                    압구정점</span
-                  >
-                  <span class="hover"
-                    >오픈 예정</span
-                  >
-                  <div class="blue-box">
-                    <a href="#"
-                      >오픈<br />예정</a
-                    >
-                  </div>
-                </div>
+              <div>
+                <img
+                  src="img/slider_1.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="img/slider_2.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="img/slider_3.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="img/slider_4.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="img/slider_5.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="section"
-          data-anchor="page7"
-        >
           <div
-            class="footer-flex page1"
+            class="brand_branding__link"
           >
             <div
-              class="apply-button__flex"
+              class="box_container"
+              data-aos="fade-up"
             >
-              <div
-                class="apply-button graph-apply-button"
-              >
-                신청하기
-              </div>
-            </div>
-            <div
-              class="brand_branding__button"
-            >
-              <button>
-                <a href="move-in.html"
-                  >입점 문의</a
+              <div class="box">
+                <span class="before">
+                  가로수길점</span
                 >
-              </button>
-            </div>
-            <div
-              class="footer__wrap page1"
-            >
-              <div class="footer web">
-                <div
-                  class="footer__address"
+                <span class="hover"
+                  >오픈 예정</span
                 >
-                  <div class="logo">
-                    <span
-                      >WITHIN
-                      BEAUTY</span
-                    >
-                  </div>
-                  <div class="phone">
-                    02-XXXX-XXXX/ AM
-                    10:00 – PM 08:30 /
-                    Off - time PM 08:30
-                    - AM 10:00
-                  </div>
-                  <div class="email">
-                    <img
-                      src="img/email.png"
-                      alt="email_icon"
-                    />
-                    admin@withinshop.com
-                  </div>
-                  <div class="email">
-                    <img
-                      src="img/safari.png"
-                      alt="website_icon"
-                    />
-                    www.withinshop.com
-                  </div>
-                  <div
-                    class="company_name"
+                <div class="blue-box">
+                  <a href="#"
+                    >오픈<br />예정</a
                   >
-                    주식회사 위드 인
-                    벤처스 | 대표자 :
-                    권혜진
-                  </div>
-                  <div class="address">
-                    ( 06192 ) 서울시
-                    강남구 선릉로 428
-                    위워크 선릉 3호점
-                  </div>
-                  <div
-                    class="copyright"
-                  >
-                    Copyright,
-                    withinventures Corp.
-                    All right reserved.
-                  </div>
-                </div>
-                <div
-                  class="footer--mobile_grid"
-                >
-                  <div
-                    class="footer__nav"
-                  >
-                    <ul>
-                      <li>
-                        <div
-                          class="footer__nav--title"
-                        >
-                          Site map
-                        </div>
-                      </li>
-                      <li>
-                        <a
-                          href="#page1"
-                          class="nav__item active"
-                          >회사 소개</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#page2"
-                          class="nav__item"
-                          >입주 업종</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#page3"
-                          class="nav__item"
-                          >서비스</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#page4"
-                          class="nav__item"
-                          >비용 절감</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#page5"
-                          class="nav__item"
-                          >공간</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="partnership.html"
-                          >제휴문의</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="footer__icon-container"
-                  >
-                    <div
-                      class="footer__icon facebook"
-                    ></div>
-                    <div
-                      class="footer__icon youtube"
-                    ></div>
-                    <div
-                      class="footer__icon behance"
-                    ></div>
-                    <div
-                      class="footer__icon instagram"
-                    ></div>
-                  </div>
                 </div>
               </div>
-              <div
-                class="footer mobile"
-              >
-                <div
-                  class="footer--mobile_grid"
+              <div class="box">
+                <span class="before"
+                  >청담점</span
                 >
-                  <div
-                    class="footer__nav"
+                <span class="hover"
+                  >오픈 예정</span
+                >
+                <div class="blue-box">
+                  <a href="#"
+                    >오픈<br />예정</a
                   >
-                    <ul>
-                      <li>
-                        <div
-                          class="footer__nav--title"
-                        >
-                          Site map
-                        </div>
-                      </li>
-                      <li>
-                        <a
-                          href="#page1"
-                          class="nav__item active"
-                          >회사 소개</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#page2"
-                          class="nav__item"
-                          >입주 업종</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#page3"
-                          class="nav__item"
-                          >서비스</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#page4"
-                          class="nav__item"
-                          >비용 절감</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#page5"
-                          class="nav__item"
-                          >공간</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="partnership.html"
-                          >제휴문의</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="footer__address"
-                  >
-                    Tel. 010-9111-1926/
-                    AM 10:00 – PM 08:30
-                    / Off - time PM
-                    08:30 - AM 10:00
-                    admin@withinshop.com
-                    www.withinshop.com
-                    주식회사 위드 인
-                    벤처스 | 대표자 :
-                    권혜진 ( 06192 )
-                    서울시 강남구 선릉로
-                    428 위워크 선릉
-                    3호점
-                  </div>
-                  <div
-                    class="footer__icon-container"
-                  >
-                    <div
-                      class="footer__icon facebook"
-                    ></div>
-                    <div
-                      class="footer__icon youtube"
-                    ></div>
-                    <div
-                      class="footer__icon behance"
-                    ></div>
-                    <div
-                      class="footer__icon instagram"
-                    ></div>
-                  </div>
-                  <span
-                    class="copyright"
-                    >Copyright,
-                    withinventures Corp.
-                    All right
-                    reserved.</span
+                </div>
+              </div>
+              <div class="box">
+                <span class="before">
+                  압구정점</span
+                >
+                <span class="hover"
+                  >오픈 예정</span
+                >
+                <div class="blue-box">
+                  <a href="#"
+                    >오픈<br />예정</a
                   >
                 </div>
               </div>
@@ -803,12 +590,279 @@
           </div>
         </div>
       </div>
+      <div
+        class="section"
+        data-anchor="page7"
+      >
+        <div class="footer-flex page1">
+          <div
+            class="apply-button__flex"
+          >
+            <div
+              class="apply-button graph-apply-button"
+            >
+              신청하기
+            </div>
+          </div>
+          <div
+            class="brand_branding__button"
+          >
+            <button>
+              <a href="move-in.html"
+                >입점 문의</a
+              >
+            </button>
+          </div>
+          <div
+            class="footer__wrap page1"
+          >
+            <div class="footer web">
+              <div
+                class="footer__address"
+              >
+                <div class="logo">
+                  <span
+                    >WITHIN BEAUTY</span
+                  >
+                </div>
+                <div class="phone">
+                  02-XXXX-XXXX/ AM 10:00
+                  – PM 08:30 / Off -
+                  time PM 08:30 - AM
+                  10:00
+                </div>
+                <div class="email">
+                  <img
+                    src="img/email.png"
+                    alt="email_icon"
+                  />
+                  admin@withinshop.com
+                </div>
+                <div class="email">
+                  <img
+                    src="img/safari.png"
+                    alt="website_icon"
+                  />
+                  www.withinshop.com
+                </div>
+                <div
+                  class="company_name"
+                >
+                  주식회사 위드 인
+                  벤처스 | 대표자 :
+                  권혜진
+                </div>
+                <div class="address">
+                  ( 06192 ) 서울시
+                  강남구 선릉로 428
+                  위워크 선릉 3호점
+                </div>
+                <div class="copyright">
+                  Copyright,
+                  withinventures Corp.
+                  All right reserved.
+                </div>
+              </div>
+              <div
+                class="footer--mobile_grid"
+              >
+                <div
+                  class="footer__nav"
+                >
+                  <ul>
+                    <li>
+                      <div
+                        class="footer__nav--title"
+                      >
+                        Site map
+                      </div>
+                    </li>
+                    <li>
+                      <a
+                        href="#page1"
+                        class="nav__item active"
+                        >회사 소개</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#page2"
+                        class="nav__item"
+                        >입주 업종</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#page3"
+                        class="nav__item"
+                        >서비스</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#page4"
+                        class="nav__item"
+                        >비용 절감</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#page5"
+                        class="nav__item"
+                        >공간</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="partnership.html"
+                        >제휴문의</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="footer__icon-container"
+                >
+                  <div
+                    class="footer__icon facebook"
+                  ></div>
+                  <div
+                    class="footer__icon youtube"
+                  ></div>
+                  <div
+                    class="footer__icon behance"
+                  ></div>
+                  <div
+                    class="footer__icon instagram"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="footer mobile">
+              <div
+                class="footer--mobile_grid"
+              >
+                <div
+                  class="footer__nav"
+                >
+                  <ul>
+                    <li>
+                      <div
+                        class="footer__nav--title"
+                      >
+                        Site map
+                      </div>
+                    </li>
+                    <li>
+                      <a
+                        href="#page1"
+                        class="nav__item active"
+                        >회사 소개</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#page2"
+                        class="nav__item"
+                        >입주 업종</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#page3"
+                        class="nav__item"
+                        >서비스</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#page4"
+                        class="nav__item"
+                        >비용 절감</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#page5"
+                        class="nav__item"
+                        >공간</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="partnership.html"
+                        >제휴문의</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="footer__address"
+                >
+                  Tel. 010-9111-1926/ AM
+                  10:00 – PM 08:30 / Off
+                  - time PM 08:30 - AM
+                  10:00
+                  admin@withinshop.com
+                  www.withinshop.com
+                  주식회사 위드 인
+                  벤처스 | 대표자 :
+                  권혜진 ( 06192 )
+                  서울시 강남구 선릉로
+                  428 위워크 선릉 3호점
+                </div>
+                <div
+                  class="footer__icon-container"
+                >
+                  <div
+                    class="footer__icon facebook"
+                  ></div>
+                  <div
+                    class="footer__icon youtube"
+                  ></div>
+                  <div
+                    class="footer__icon behance"
+                  ></div>
+                  <div
+                    class="footer__icon instagram"
+                  ></div>
+                </div>
+                <span class="copyright"
+                  >Copyright,
+                  withinventures Corp.
+                  All right
+                  reserved.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <!--footer-->
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"
     ></script>
+    <script type="text/javascript">
+      $(function () {
+        $('.bar').each(function (
+          key,
+          bar
+        ) {
+          var percentage = $(this).data(
+            'percentage'
+          );
+          $(this).animate(
+            {
+              width: percentage + '%',
+            },
+            1000
+          );
+        });
+      });
+    </script>
 
     <script>
       // This changes everything

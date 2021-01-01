@@ -1,4 +1,8 @@
-onLeave: function () { jQuery(
+
+
+ let stack1=document.getElementById=("stack1")
+ let stack2=document.getElementById=("stack2")
+ let btn=document.getElementById=("btn")onLeave: function () { jQuery(
     '.section [data-aos]'
     ).removeClass('aos-animate'); },
     onSlideLeave: function () {
