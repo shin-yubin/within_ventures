@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
-
+html{-webkit-text-size-adjust: none; 	-moz-text-size-adjust: none; 	-ms-text-size-adjust: none;}
 .mobile-nav__box,
 .footer.mobile {
   display: none;
