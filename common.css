@@ -226,8 +226,9 @@ p {
 }
 .header__align-items {
   display: flex;
-  align-items: space-between;
-  width: 80vw;
+  align-items: CENTER;
+  justify-content: space-between;
+  width: 100vw;
 }
 .header__logo {
   display: inline-flex;
@@ -250,7 +251,7 @@ p {
 }
 .header__nav {
   display: flex;
-  align-content: center;
+  align-items: center;
   margin-right: 3.25rem;
   opacity: 0.57;
   font-family: 'Noto Sans KR',
@@ -262,7 +263,6 @@ p {
   letter-spacing: normal;
   text-align: left;
   color: #606060;
-  margin-left: 52.46875%;
 }
 .header__nav ul {
   display: inline-flex;
@@ -1502,7 +1502,7 @@ label {
   margin-left: 2.5rem;
 }
 .move-in-procedure__icon--wrap img {
-  width: 79.5rem;
+  width: 90vw;
 }
 .move-in-procedure__icon--wrap
   .page3
@@ -1658,10 +1658,23 @@ input[type='checkbox']:checked
   background: #5bd8fe;
   border: none;
 }
-
+.partnership__icon--wrap {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+}
 @media all and (min-width: 1024px) and (max-width: 1600px) {
+  .partnership__icon--wrap img {
+    width: 90vw;
+    height: 472.78px;
+  }
   html {
     font-size: 10px;
+  }
+  .move-in-procedure__icon--wrap img {
+    width: 90vw;
+    height: 204.8px;
   }
   .header__align-items {
     display: flex;
@@ -1714,6 +1727,10 @@ input[type='checkbox']:checked
 
 /* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
+  .partnership__icon--wrap img {
+    width: 90vw;
+    height: 354.58px;
+  }
   html {
     font-size: 12px;
   }
@@ -1763,7 +1780,7 @@ input[type='checkbox']:checked
 }
 
 /* 테블릿 세로 (해상도 768px ~ 1023px)*/
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
   html {
     font-size: 10px;
   }
@@ -1807,11 +1824,12 @@ input[type='checkbox']:checked
   }
   .move-in-procedure__icon--wrap img {
     width: 88vw;
+    height: 150.77px;
   }
 }
 
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
-@media all and (min-width: 480px) and (max-width: 768px) {
+@media all and (min-width: 480px) and (max-width: 767px) {
   html {
     font-size: 10px;
   }
@@ -1955,6 +1973,7 @@ input[type='checkbox']:checked
   }
   .move-in-procedure__icon--wrap img {
     width: 90vw;
+    height: 75px;
   }
   .application_acceptance__button {
     width: 100vw;
@@ -2431,6 +2450,7 @@ input[type='checkbox']:checked
   }
   .move-in-procedure__icon--wrap img {
     width: 90vw;
+    height: 79px;
   }
   .application_acceptance__button {
     width: 100vw;
@@ -2448,10 +2468,22 @@ input[type='checkbox']:checked
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .partnership__icon--wrap img {
+    width: 90vw;
+    height: 173.14px;
+  }
 }
 @media all and (max-width: 320px) {
   html {
     font-size: 5px;
+  }
+  .partnership__icon--wrap img {
+    width: 90vw;
+    height: 148.73px;
+  }
+  .move-in-procedure__icon--wrap img {
+    width: 90vw;
+    height: 64px;
   }
   .header__nav {
     margin-left: 0%;

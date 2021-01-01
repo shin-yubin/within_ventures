@@ -235,8 +235,9 @@ p {
 }
 .header__align-items {
   display: flex;
-  align-items: space-between;
-  width: 80vw;
+  align-items: CENTER;
+  justify-content: space-between;
+  width: 100vw;
 }
 .header__logo {
   display: inline-flex;
@@ -271,7 +272,6 @@ p {
   letter-spacing: normal;
   text-align: left;
   color: #606060;
-  margin-left: 52.46875%;
 }
 .header__nav ul {
   display: inline-flex;
