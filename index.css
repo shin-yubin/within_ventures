@@ -1720,10 +1720,7 @@ input[type='checkbox']:checked
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
-  .recruitment__icon-container img {
-    height: auto;
-    width: 28.125rem;
-  }
+
   .radio_container.page3.q6 {
     grid-template-rows: repeat(
       3,
@@ -1913,10 +1910,7 @@ input[type='checkbox']:checked
     justify-content: center;
     width: 80vw;
   }
-  .recruitment__icon-container img {
-    width: 70vw;
-    height: auto;
-  }
+
   .brand__recruitment span {
     margin-bottom: 2vw;
     width: auto;
@@ -2000,7 +1994,7 @@ input[type='checkbox']:checked
       'gab gab gab gab gab';
   }
   .apply-button__flex {
-    width: 90vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     grid-area: gab;
@@ -2379,11 +2373,6 @@ input[type='checkbox']:checked
     line-height: 1.5rem;
   }
 
-  .recruitment__icon-container img {
-    width: 70vw;
-    height: auto;
-  }
-
   .radio_container.page3.q6 {
     grid-template-rows: repeat(
       3,
@@ -2654,12 +2643,7 @@ input[type='checkbox']:checked
       'bt des des des des'
       'gab gab gab gab gab';
   }
-  .apply-button__flex {
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    grid-area: gab;
-  }
+
   .g-wrap p {
     width: 99%;
     word-break: keep-all;
@@ -3006,6 +2990,7 @@ input[type='checkbox']:checked
   html {
     font-size: 12px;
   }
+
   .footer-flex.page1 {
     display: flex;
     align-items: flex-end;
@@ -3016,14 +3001,16 @@ input[type='checkbox']:checked
     background-size: cover;
     overflow: visible;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     background-image: none;
   }
+
   .mobile-nav__container {
     width: 100vw;
     display: flex;
     justify-content: space-around;
     margin-top: 10vh;
+    padding: 0 5vw;
   }
   .mobile-nav__box {
     width: 40vw;
@@ -3066,7 +3053,7 @@ input[type='checkbox']:checked
   }
   .recruitment__icon-container img {
     width: 70vw;
-    height: auto;
+    height: 280px;
   }
   .radio_container.page3.q6 {
     grid-template-rows: repeat(
@@ -3080,18 +3067,20 @@ input[type='checkbox']:checked
     grid-auto-flow: row;
   }
   p {
-    font-size: 2rem;
+    padding-right: 0;
+    width: 80vw;
+    font-size: 2.5rem;
   }
 
   .apply-button {
     align-self: center;
-    width: 274.4px;
-    height: 60px;
+    width: 30vw;
+    height: 8vh;
     opacity: 0.77;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: #5bd8fe;
     font-size: 16px;
     font-weight: 500;
@@ -3101,7 +3090,7 @@ input[type='checkbox']:checked
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 30px;
     margin: 40px 0;
   }
   .header {
@@ -3226,7 +3215,7 @@ input[type='checkbox']:checked
   }
   .brand__recruitment {
     width: 100vw;
-    height: 50vh;
+    height: 69vh;
     display: flex;
     justify-content: flex-start;
     padding-top: 0;
@@ -3259,7 +3248,7 @@ input[type='checkbox']:checked
   }
   .recruitment__icon-container img {
     width: 70vw;
-    height: auto;
+    height: 280px;
   }
   .brand_membership {
     width: 100vw;
@@ -3303,6 +3292,7 @@ input[type='checkbox']:checked
   .brand_membership__container img {
     margin-top: 8px;
     width: 60vw;
+    height: 279.27px;
   }
   .G-wrap {
     display: flex;
@@ -3339,12 +3329,7 @@ input[type='checkbox']:checked
       'bt des des des des'
       'gab gab gab gab gab';
   }
-  .apply-button__flex {
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    grid-area: gab;
-  }
+
   .g-wrap p {
     width: 99%;
     word-break: keep-all;
@@ -3660,7 +3645,8 @@ input[type='checkbox']:checked
   }
   .slider {
     width: 80vw;
-    height: 25vh;
+
+    height: 20vh;
   }
   .slider img {
     width: auto;
@@ -3883,7 +3869,7 @@ input[type='checkbox']:checked
   }
   .recruitment__icon-container img {
     width: 70vw;
-    height: auto;
+    height: 200px;
   }
   .brand_membership {
     width: 100vw;
@@ -3928,6 +3914,7 @@ input[type='checkbox']:checked
   .brand_membership__container img {
     margin-top: 8px;
     width: 60vw;
+    height: 209.45px;
   }
   .G-wrap {
     display: flex;
@@ -3964,12 +3951,7 @@ input[type='checkbox']:checked
       'bt des des des des'
       'gab gab gab gab gab';
   }
-  .apply-button__flex {
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    grid-area: gab;
-  }
+
   .g-wrap p {
     width: 99%;
     word-break: keep-all;
@@ -4351,12 +4333,7 @@ input[type='checkbox']:checked
       'bt des des des des'
       'gab gab gab gab gab';
   }
-  .apply-button__flex {
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    grid-area: gab;
-  }
+
   .header__descripton {
     position: absolute;
     z-index: 2;
@@ -4774,7 +4751,7 @@ input[type='checkbox']:checked
   }
   .recruitment__icon-container img {
     width: 80vw;
-    height: auto;
+    height: 115.77px;
   }
   .brand_membership {
     width: 100vw;
@@ -4812,6 +4789,7 @@ input[type='checkbox']:checked
   .brand_membership__container img {
     margin: 1vh 0 4vh;
     width: 80vw;
+    height: 136.36px;
   }
   .g-wrap {
     width: 90%;
@@ -4840,12 +4818,7 @@ input[type='checkbox']:checked
       'bt des des des des'
       'gab gab gab gab gab';
   }
-  .apply-button__flex {
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    grid-area: gab;
-  }
+
   .g-wrap p {
     width: 99%;
     word-break: keep-all;
@@ -5387,7 +5360,7 @@ input[type='checkbox']:checked
   }
   .brand__recruitment {
     width: 100vw;
-    height: 70vh;
+    height: 52vh;
     display: flex;
     justify-content: flex-start;
     padding-top: 18px;
@@ -5415,7 +5388,7 @@ input[type='checkbox']:checked
   }
   .recruitment__icon-container img {
     width: 80vw;
-    height: auto;
+    height: 100px;
   }
   .brand_membership {
     width: 100vw;
@@ -5454,6 +5427,7 @@ input[type='checkbox']:checked
   .brand_membership__container img {
     margin: 1vh 0 3vh;
     width: 80vw;
+    height: 116.36px;
   }
   .g-wrap {
     width: 95%;
