@@ -1178,18 +1178,7 @@ body[data-aos-duration='4000']
 .graph_container:nth-child(1) {
   padding-bottom: 7.75rem;
 }
-.graph_container span {
-  display: inline-block;
-  height: 5.3625rem;
-  line-height: 2.5rem;
-  text-align: right;
-  background: #5bd8fe;
-  border-radius: 2.5rem;
-  box-sizing: border-box;
-  color: black;
-  animation: stack1 2s 1;
-  position: relative;
-}
+
 .graph__money {
   grid-column-start: 2;
   grid-column-end: 3;
