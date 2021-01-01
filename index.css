@@ -6051,3 +6051,7 @@ input[type='checkbox']:checked
 }
 .footer.common {
 }
+
+html {
+  scroll-behavior: smooth;
+}

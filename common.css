@@ -1416,7 +1416,11 @@ body[data-aos-duration='4000']
   );
   grid-auto-flow: column;
 }
-
+.partnership__icon--wrap img {
+  width: 70vw;
+  height: auto;
+  margin-top: 2vh;
+}
 label {
   font-family: 'Noto Sans KR';
   font-size: 1.688rem;
