@@ -1991,7 +1991,7 @@ input[type='checkbox']:checked
     display: grid;
     height: 50vh;
     grid-template-columns: 1.5fr 0.67fr 1.5fr 0.3fr 1fr;
-    grid-template-rows: 10% 10% 20% 20% 20%;
+    grid-template-rows: 10% 20% 20% 20% 20%;
     grid-template-areas:
       'l . . . .'
       'm1 g1 g1 . . '
@@ -2010,7 +2010,7 @@ input[type='checkbox']:checked
     word-break: keep-all;
   }
   .graph__logo {
-    background-position: 0 3rem;
+    background-position: center;
   }
   .graph2_title_bold {
     width: auto;
@@ -2076,7 +2076,7 @@ input[type='checkbox']:checked
     height: 20%;
   }
   .brand_branding__button {
-    height: 70vh;
+    height: 0;
   }
   .footer__wrap {
     height: auto;
@@ -2092,7 +2092,6 @@ input[type='checkbox']:checked
   .footer.mobile {
     color: black;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
   }
   .footer__nav ul {
     list-style: none;
@@ -2379,10 +2378,12 @@ input[type='checkbox']:checked
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
+
   .recruitment__icon-container img {
+    width: 70vw;
     height: auto;
-    width: 28.125rem;
   }
+
   .radio_container.page3.q6 {
     grid-template-rows: repeat(
       3,
@@ -2645,7 +2646,7 @@ input[type='checkbox']:checked
     display: grid;
     height: 50vh;
     grid-template-columns: 1.5fr 0.67fr 1.5fr 0.3fr 1fr;
-    grid-template-rows: 10% 10% 20% 20% 20%;
+    grid-template-rows: 10% 20% 20% 20% 20%;
     grid-template-areas:
       'l . . . .'
       'm1 g1 g1 . . '
@@ -2664,7 +2665,7 @@ input[type='checkbox']:checked
     word-break: keep-all;
   }
   .graph__logo {
-    background-position: 0 3rem;
+    background-position: center;
   }
   .graph2_title_bold {
     width: auto;
@@ -2728,7 +2729,7 @@ input[type='checkbox']:checked
     height: 20%;
   }
   .brand_branding__button {
-    height: 70vh;
+    height: 0;
   }
   .footer__wrap {
     height: auto;
@@ -2744,7 +2745,6 @@ input[type='checkbox']:checked
   .footer.mobile {
     color: black;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
   }
   .footer__nav ul {
     list-style: none;
@@ -3006,6 +3006,19 @@ input[type='checkbox']:checked
   html {
     font-size: 12px;
   }
+  .footer-flex.page1 {
+    display: flex;
+    align-items: flex-end;
+    width: 100vw;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: visible;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: none;
+  }
   .mobile-nav__container {
     width: 100vw;
     display: flex;
@@ -3052,8 +3065,8 @@ input[type='checkbox']:checked
     line-height: 1.5rem;
   }
   .recruitment__icon-container img {
+    width: 70vw;
     height: auto;
-    width: 28.125rem;
   }
   .radio_container.page3.q6 {
     grid-template-rows: repeat(
@@ -3203,12 +3216,13 @@ input[type='checkbox']:checked
   }
   .brand__recruitment--container {
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     display: flex;
     background-repeat: no-repeat;
     background-size: 80vw auto;
     background-position: 50% 10%;
     align-items: flex-end;
+    padding: 0 0 10vh;
   }
   .brand__recruitment {
     width: 100vw;
@@ -3336,7 +3350,7 @@ input[type='checkbox']:checked
     word-break: keep-all;
   }
   .graph__logo {
-    background-position: 0 3rem;
+    background-position: center;
   }
   .graph2_title_bold {
     width: auto;
@@ -3376,13 +3390,14 @@ input[type='checkbox']:checked
     font-size: 2.5rem;
   }
   .box_container {
+    height: 50vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 80%;
     flex-direction: column;
   }
   .box {
-    height: 8rem;
+    height: 10vh;
     color: white;
     opacity: 0.52;
     background-color: #5bd8fe;
@@ -3400,7 +3415,7 @@ input[type='checkbox']:checked
     height: 20%;
   }
   .brand_branding__button {
-    height: 70vh;
+    height: 0;
   }
   .footer__wrap {
     height: auto;
@@ -3416,7 +3431,6 @@ input[type='checkbox']:checked
   .footer.mobile {
     color: black;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
   }
   .footer__nav ul {
     list-style: none;
@@ -3826,12 +3840,13 @@ input[type='checkbox']:checked
   }
   .brand__recruitment--container {
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     display: flex;
     background-repeat: no-repeat;
     background-size: 80vw auto;
     background-position: 50% 10%;
     align-items: flex-end;
+    padding-bottom: 10vh;
   }
   .brand__recruitment {
     width: 100vw;
@@ -3941,7 +3956,7 @@ input[type='checkbox']:checked
     display: grid;
     height: 50vh;
     grid-template-columns: 1.5fr 0.67fr 1.5fr 0.3fr 1fr;
-    grid-template-rows: 10% 10% 20% 20% 20%;
+    grid-template-rows: 10% 20% 20% 20% 20%;
     grid-template-areas:
       'l . . . .'
       'm1 g1 g1 . . '
@@ -3960,7 +3975,7 @@ input[type='checkbox']:checked
     word-break: keep-all;
   }
   .graph__logo {
-    background-position: 0 3rem;
+    background-position: center;
   }
   .graph2_title_bold {
     width: auto;
@@ -4001,7 +4016,7 @@ input[type='checkbox']:checked
   }
   .box_container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 80%;
     flex-direction: column;
   }
@@ -4024,7 +4039,7 @@ input[type='checkbox']:checked
     height: 20%;
   }
   .brand_branding__button {
-    height: 70vh;
+    height: 0;
   }
   .footer__wrap {
     height: auto;
@@ -4040,7 +4055,6 @@ input[type='checkbox']:checked
   .footer.mobile {
     color: black;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
   }
   .footer__nav ul {
     list-style: none;
@@ -4329,7 +4343,7 @@ input[type='checkbox']:checked
     display: grid;
     height: 50vh;
     grid-template-columns: 1.5fr 0.67fr 1.5fr 0.3fr 1fr;
-    grid-template-rows: 10% 10% 20% 20% 20%;
+    grid-template-rows: 10% 20% 20% 20% 20%;
     grid-template-areas:
       'l . . . .'
       'm1 g1 g1 . . '
@@ -4353,8 +4367,8 @@ input[type='checkbox']:checked
     margin-top: 20vh;
   }
   .recruitment__icon-container img {
+    width: 70vw;
     height: auto;
-    width: 12.5rem;
   }
   .radio {
     width: 9.575em;
@@ -4732,7 +4746,7 @@ input[type='checkbox']:checked
   }
   .brand__recruitment {
     width: 100vw;
-    height: 65vh;
+
     display: flex;
     justify-content: flex-start;
     padding-top: 2vh;
@@ -4759,7 +4773,7 @@ input[type='checkbox']:checked
     margin: 2vh 0 4vh;
   }
   .recruitment__icon-container img {
-    width: 60.19rem;
+    width: 80vw;
     height: auto;
   }
   .brand_membership {
@@ -4837,7 +4851,7 @@ input[type='checkbox']:checked
     word-break: keep-all;
   }
   .graph__logo {
-    background-position: 0 3rem;
+    background-position: center;
   }
   .graph2_title_bold {
     width: auto;
@@ -4878,7 +4892,7 @@ input[type='checkbox']:checked
   }
   .box_container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 80%;
 
     flex-direction: column;
@@ -4897,7 +4911,7 @@ input[type='checkbox']:checked
     margin: 2vh 0 0;
   }
   .brand_branding__button {
-    height: 70vh;
+    height: 0;
   }
   .footer__wrap {
     height: auto;
@@ -4913,7 +4927,6 @@ input[type='checkbox']:checked
   .footer {
     color: black;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
   }
   .footer__nav ul {
     list-style: none;
@@ -5483,7 +5496,7 @@ input[type='checkbox']:checked
     word-break: keep-all;
   }
   .graph__logo {
-    background-position: 0 3rem;
+    background-position: center;
   }
   .graph2_title_bold {
     width: auto;
@@ -5543,7 +5556,7 @@ input[type='checkbox']:checked
     height: 20%;
   }
   .brand_branding__button {
-    height: 70vh;
+    height: 0;
   }
   .footer__wrap {
     height: auto;

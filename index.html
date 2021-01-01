@@ -13,6 +13,9 @@
     />
     <title>WITHIN-BEAUTY</title>
     <style>
+      * {
+        -webkit-text-size-adjust: none;
+      }
       body {
         font-family: 'Noto Sans',
           'Noto Sans KR', sans-serif;
@@ -28,6 +31,15 @@
         scroll-behavior: smooth !important;
       }
       .fp-viewing-1 {
+      }
+    </style>
+    <meta
+      name="viewport"
+      content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width"
+    />
+    <style type="text/css">
+      * {
+        -webkit-text-size-adjust: none;
       }
     </style>
     <link
@@ -264,9 +276,7 @@
                 />
               </div>
             </div>
-            <div class="apply-button">
-              신청하기
-            </div>
+          
             <!--recruitment_icon-->
           </div>
         </div>
@@ -305,10 +315,7 @@
                 alt=""
               />
             </div>
-            <div class="apply-button">
-              신청하기
-            </div>
-          </div>
+          
         </div>
       </div>
       <div
@@ -801,10 +808,12 @@
         ],
       });
     </script>
+
     <script>
       // This changes everything
       /*fullpage*/
       // retrieve the element
+
       $('.responsive').slick({
         autoplay: true,
         autoplaySpeed: 2000,
