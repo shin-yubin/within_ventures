@@ -1339,6 +1339,225 @@ body[data-aos-duration='4000']
   text-align: left;
   color: #000000;
 }
+.graph_container:nth-child(1) {
+  padding-bottom: 7.75rem;
+}
+.graph_container span {
+  display: inline-block;
+  height: 5.3625rem;
+  line-height: 2.5rem;
+  text-align: right;
+  background: #5bd8fe;
+  border-radius: 2.5rem;
+  box-sizing: border-box;
+  color: black;
+  animation: stack1 2s 1;
+  position: relative;
+}
+.stack1 span {
+  animation: stack1 2s 1;
+  width: 27%;
+  grid-area: g1;
+}
+.stack2 span {
+  animation: stack2 2s 1;
+  width: 100%;
+  grid-area: g2;
+}
+@keyframes stack1 {
+  0% {
+    width: 100%;
+    color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    color: rgba(0, 0, 0, 1);
+  }
+  100% {
+    width: 27%;
+  }
+}
+@keyframes stack2 {
+  0% {
+    width: 0%;
+    color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    color: rgba(0, 0, 0, 1);
+  }
+  100% {
+    width: 100%;
+  }
+}
+.graph__money {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-area: m1;
+  padding-left: 20%;
+}
+.graph__money span {
+  font-family: 'Noto Sans KR';
+  font-size: 1.688rem;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.graph__money strong {
+  font-weight: 300;
+}
+.graph__money2 {
+  margin-top: 4.55rem;
+  grid-area: m2;
+}
+.graph2_title_bold {
+  margin-bottom: 1.65625rem;
+  font-family: NotoSansKR;
+  font-size: 1.813rem;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  width: 9.188rem;
+  height: 2.438rem;
+  margin: 4.019rem 1.8rem 1.444rem
+    4.488rem;
+  font-family: NotoSansKR;
+  font-size: 1.831rem;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.graph__wrap {
+  display: grid;
+  height: 70vh;
+  grid-template-columns: 1fr 0.67fr 1.5fr 0.1fr 1fr;
+  grid-template-rows: 20% 20% 20% 20%;
+  grid-template-areas:
+    'l . . . .'
+    'm1 g1 g1 . . '
+    'm2 g2 g2 g2 g2'
+    'bt . des des des';
+}
+.graph__logo {
+  grid-area: l;
+  background-position: 0 5.625rem;
+  background-image: url(img/logo1.png);
+  background-repeat: no-repeat;
+  background-size: 85%;
+  text-align: left;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.graph__logo > span {
+  text-indent: -999999px;
+}
+.graph {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.percentage {
+  display: inline-flex;
+  width: 7.125rem;
+  height: 5.3625rem;
+  font-family: 'Noto Sans KR';
+  font-size: 3.744rem;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+}
+.p83 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-area: p83;
+}
+.p100 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-area: p100;
+}
+.discription__text {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  opacity: 0.46;
+  font-family: 'Noto Sans KR',
+    sans-serif;
+  margin-top: 4.431rem;
+  font-size: 1.475rem;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.063rem;
+  letter-spacing: normal;
+  text-align: right;
+  color: #000000;
+  grid-area: des;
+}
+.discription__button {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-area: bt;
+  cursor: pointer;
+}
+.discription__button #stackG {
+  width: auto;
+  height: 15rem;
+  text-align: center;
+  margin-top: 4.431rem;
+  margin-left: 20%;
+  background-image: url(img/replay.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border: none;
+}
+.icon__membership {
+  width: 11.25rem;
+  height: 11.25rem;
+  background-color: #3197ee;
+  text-align: center;
+}
+
+.graph__money__span {
+  font-family: 'Noto Sans KR';
+  font-size: 1.688rem;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
 .application_acceptance__input {
   display: flex;
   flex-direction: column;

@@ -12,53 +12,7 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>WITHIN-BEAUTY</title>
-    <style>
-      #stack1 span {
-        animation: stack1 2s 1 infinite;
-        animation-delay: 0;
-        width: 27%;
-        grid-area: g1;
-      }
-      #stack2 span {
-        animation: stack2 2s 1 infinite;
-        animation-delay: 0;
-        width: 100%;
-        grid-area: g2;
-      }
 
-      @keyframes stack1 {
-        from {
-          width: 500px;
-          color: rgba(255, 255, 255, 0);
-        }
-
-        to {
-          width: 27px;
-        }
-      }
-      @keyframes stack2 {
-        from {
-          width: 0%;
-          color: rgba(255, 255, 255, 0);
-        }
-
-        to {
-          width: 500px;
-        }
-      }
-      .discription__button.button {
-        width: 10rem;
-        height: 5rem;
-        text-align: center;
-        margin-top: 4.431rem;
-        margin-left: 20%;
-        background-image: url(img/replay.png);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        border: none;
-      }
-    </style>
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
@@ -362,27 +316,27 @@
               <div class="graph__wrap">
                 <div
                   class="graph__logo"
-                  data-aos="fade-up"
-                  data-aos-delay="50"
-                  data-aos-duration="1000"
                 ></div>
                 <div
                   class="graph__money"
                 >
                   <div
                     class="graph__money1"
-                    data-aos="fade-up"
-                    data-aos-delay="50"
-                    data-aos-duration="1000"
                   >
                     <span
                       class="graph__money__span"
+                      data-aos="fade-up"
+                      data-aos-delay="50"
+                      data-aos-duration="1000"
                       >창업비
                       <strong
                         >523만원</strong
                       ></span
                     ><br /><span
                       class="graph__money__span"
+                      data-aos="fade-up"
+                      data-aos-delay="50"
+                      data-aos-duration="1000"
                       >유지비
                       <strong
                         >126만원</strong
@@ -391,7 +345,6 @@
                   </div>
                   <div
                     class="graph__money2"
-                    class="graph2_title_bold"
                     data-aos="fade-up"
                     data-aos-delay="50"
                     data-aos-duration="1000"
@@ -417,13 +370,9 @@
                     >
                   </div>
                 </div>
-                <div
-                  class="graph"
-                  id="elem"
-                >
+                <div class="graph">
                   <div
-                    id="stack1"
-                    class="bar graph_container stack1 graphStack1 run-animation"
+                    class="graph_container stack1 graphStack1 run-animation"
                   >
                     <span
                       class="run-animation"
@@ -436,9 +385,7 @@
                     </div>
                   </div>
                   <div
-                    id="stack2"
-                    data-percentage="100"
-                    class="bar graph_container stack2 graphStack2 run-animation"
+                    class="graph_container stack2 graphStack2 run-animation"
                   >
                     <span
                       class="run-animation"
@@ -453,12 +400,10 @@
                 <div
                   class="discription__button"
                 >
-                  <button
+                  <div
                     class="button discription__button"
-                    id="btn"
-                    class="toggleButton"
-                    value="play"
-                  ></button>
+                    id="stackG"
+                  ></div>
                 </div>
                 <p
                   class="discription__text"
