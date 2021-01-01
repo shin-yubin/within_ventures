@@ -1692,6 +1692,9 @@ input[type='checkbox']:checked
     font-size: 12px;
   }
 
+  #place {
+    padding-top: 100vh;
+  }
   .header__align-items {
     display: flex;
     width: 100vw;
@@ -2990,7 +2993,9 @@ input[type='checkbox']:checked
   html {
     font-size: 12px;
   }
-
+  #place {
+    padding-top: 100vh;
+  }
   .footer-flex.page1 {
     display: flex;
     align-items: flex-end;
@@ -3686,7 +3691,9 @@ input[type='checkbox']:checked
     font-size: 3rem;
     border-radius: 20px;
   }
-
+  #place {
+    padding-top: 100vh;
+  }
   html {
     font-size: 10px;
   }
@@ -4295,6 +4302,9 @@ input[type='checkbox']:checked
 
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width: 767px) {
+  #place {
+    padding-top: 150vh;
+  }
   .facebook {
     background-image: url(img/facebook_mobile.png);
     background-size: cover;
@@ -4574,6 +4584,9 @@ input[type='checkbox']:checked
 @media all and (max-width: 479px) {
   html {
     font-size: 5px;
+  }
+  #place {
+    padding-top: 100vh;
   }
   .apply-button {
     align-self: center;
@@ -5211,6 +5224,9 @@ input[type='checkbox']:checked
 @media all and (max-width: 320px) {
   html {
     font-size: 5px;
+  }
+  #place {
+    padding-top: 100vh;
   }
   .apply-button {
     align-self: center;
