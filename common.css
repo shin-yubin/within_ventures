@@ -2648,3 +2648,6 @@ input[type='checkbox']:checked
     margin-left: auto;
   }
 }
+.move-in-procedure__icon--wrap img {
+  width: 70vw;
+}

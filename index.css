@@ -478,7 +478,7 @@ p {
   width: 45%;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 0%;
+  margin-left: 2%;
   word-break: none;
 }
 .footer__address .logo {
