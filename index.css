@@ -3350,7 +3350,7 @@ input[type='checkbox']:checked
   p {
     padding-right: 0;
     width: 80vw;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
   }
 
   .apply-button {
@@ -3617,6 +3617,7 @@ input[type='checkbox']:checked
       'm1 g1 g1 . . '
       'm2 g2 g2 g2 g2'
       'bt des des des des';
+    padding-top: 1vh;
   }
 
   .g-wrap p {
