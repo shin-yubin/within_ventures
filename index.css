@@ -1,7 +1,11 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
-html{-webkit-text-size-adjust: none; 	-moz-text-size-adjust: none; 	-ms-text-size-adjust: none;}
+html {
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
 .mobile-nav__box,
 .footer.mobile {
   display: none;
@@ -1850,8 +1854,55 @@ input[type='checkbox']:checked
   background: #5bd8fe;
   border: none;
 }
-
-@media all and (max-width: 1600px) {
+@media all and (max-width: 1500px) {
+  html {
+    font-size: 12px;
+  }
+  .brand_identity__container {
+    width: 45%;
+    height: 100vh;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    margin-right: 50%;
+    padding-left: 10%;
+    display: flex;
+  }
+  .brand_identity p {
+    width: 90%;
+  }
+  .brand__recruitment p {
+    margin-bottom: 6.6625rem;
+    text-align: left;
+    width: 80%;
+    word-break: break-all;
+    margin-bottom: 7%;
+  }
+  .brand__recruitment span {
+    margin-bottom: 2rem;
+    color: #606060;
+  }
+  .brand_membership__description p {
+    width: 80%;
+    word-break: keep-all;
+  }
+  .brand_branding__title span {
+    font-family: 'Noto Sans KR',
+      sans-serif;
+    font-size: 1.9375rem;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: left;
+    color: #606060;
+    width: 70vw;
+    padding-right: 31.25rem;
+  }
+}
+@media all and (max-width: 1300px) {
   html {
     font-size: 12px;
   }
@@ -2200,8 +2251,7 @@ input[type='checkbox']:checked
   .brand_branding__title h3 {
     margin-bottom: 3rem;
     width: auto;
-    font-size: 5rem;
-    line-height: 6rem;
+
     width: 90%;
   }
 
@@ -2216,23 +2266,12 @@ input[type='checkbox']:checked
     width: 80%;
     flex-direction: column;
   }
-  .box {
-    height: 8rem;
-    color: white;
-    opacity: 0.52;
-    background-color: #5bd8fe;
-    cursor: pointer;
 
-    border-radius: 15px;
-  }
   .box .before {
     display: flex;
     align-self: center;
   }
 
-  .blue-box {
-    display: none;
-  }
   .brand_branding__link {
     height: 20%;
   }
@@ -2359,8 +2398,7 @@ input[type='checkbox']:checked
   .application_acceptance__info h3 {
     height: auto;
     margin: 0 2rem 4rem 0.25rem;
-    font-size: 5rem;
-    line-height: 6rem;
+
     width: 50vw;
     /*font-size: 2.938rem;*/
   }
@@ -2845,8 +2883,7 @@ input[type='checkbox']:checked
   .brand_branding__title h3 {
     margin-bottom: 3rem;
     width: auto;
-    font-size: 5rem;
-    line-height: 6rem;
+
     width: 90%;
   }
 
@@ -2861,21 +2898,12 @@ input[type='checkbox']:checked
     width: 80%;
     flex-direction: column;
   }
-  .box {
-    height: 8rem;
-    color: white;
-    opacity: 0.52;
-    background-color: #5bd8fe;
-    cursor: pointer;
-  }
+
   .box .before {
     display: flex;
     align-self: center;
   }
 
-  .blue-box {
-    display: none;
-  }
   .brand_branding__link {
     height: 20%;
   }
@@ -3002,8 +3030,7 @@ input[type='checkbox']:checked
   .application_acceptance__info h3 {
     height: auto;
     margin: 0 2rem 4rem 0.25rem;
-    font-size: 5rem;
-    line-height: 6rem;
+
     width: 50vw;
     /*font-size: 2.938rem;*/
   }
@@ -3150,6 +3177,91 @@ input[type='checkbox']:checked
     background-image: url(img/behance_mobile.png);
     background-size: cover;
   }
+  .header__descripton.page1 {
+    margin-left: 0%;
+    margin-top: 5%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .brand_identity {
+    width: 100vw;
+    height: 150vh;
+    background-image: url(img/cloud.jpg) !important;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 80vw auto;
+    background-position: 50% 30%;
+    align-items: flex-end;
+    margin-top: 20vh;
+  }
+  .brand__recruitment--container {
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 80vw auto;
+    background-position: 50% 10%;
+    align-items: flex-end;
+  }
+  .brand__recruitment {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    align-items: flex-start;
+  }
+  .brand_membership {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/marble.jpg);
+    display: flex;
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 80vw auto;
+    background-position: 50% 40%;
+    align-items: flex-end;
+  }
+  .G-wrap {
+    display: flex;
+    height: 150vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15vh;
+    border: none;
+  }
+  .graph__wrap {
+    display: grid;
+    height: 70vh;
+  }
+  .brand_branding {
+    height: 130vh;
+  }
+  .brand_branding__title h3 {
+    margin-bottom: 3rem;
+    width: auto;
+
+    width: 60%;
+  }
+  .box_container {
+    display: flex;
+    flex-direction: row;
+  }
+  .apply-button__flex {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    grid-area: gab;
+  }
 }
 
 /* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
@@ -3158,7 +3270,7 @@ input[type='checkbox']:checked
     font-size: 12px;
   }
   #place {
-    padding-top: 100vh;
+    padding-top: 120vh;
   }
   .footer-flex.page1 {
     display: flex;
@@ -3348,17 +3460,19 @@ input[type='checkbox']:checked
   }
   .brand_identity {
     width: 100vw;
-    height: 100vh;
+    height: 55vh;
     background-image: url(img/cloud.jpg) !important;
     display: flex;
     background-repeat: no-repeat;
-    background-size: 80vw auto;
-    background-position: 50% 30%;
+    background-size: 80vw 40vh;
+    background-position: center top;
     align-items: flex-end;
+    margin: 0;
+    margin-bottom: 10vh;
   }
   .brand_identity__container {
     width: 100vw;
-    height: 49vh;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     padding-top: 18px;
@@ -3374,17 +3488,17 @@ input[type='checkbox']:checked
   }
   .brand__recruitment--container {
     width: 100vw;
-    height: 130vh;
+    height: 90vh;
     display: flex;
     background-repeat: no-repeat;
-    background-size: 80vw auto;
-    background-position: 50% 10%;
+    background-size: 80vw 40vh;
+    background-position: center top;
     align-items: flex-end;
     padding: 0 0 10vh;
   }
   .brand__recruitment {
     width: 100vw;
-    height: 69vh;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     padding-top: 0;
@@ -3420,26 +3534,26 @@ input[type='checkbox']:checked
     height: 280px;
   }
   .brand_membership {
-    width: 100vw;
-    height: 100vh;
     background-image: url(img/marble.jpg);
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 104vh;
     display: flex;
     background-repeat: no-repeat;
-    background-size: 80vw auto;
-    background-position: 50% 40%;
+    background-size: 80vw 40vh;
+    background-position: center top;
     align-items: flex-end;
+    padding-bottom: 10vh;
   }
   .brand_membership__container {
     width: 100vw;
-    height: 60vh;
+    height: auto;
     display: flex;
     justify-content: flex-start;
-    padding-top: 18px;
+    padding-top: 0;
     padding-right: 10%;
     padding-left: 10%;
+    padding-bottom: 10vh;
     align-items: flex-start;
     margin: 0;
   }
@@ -3463,12 +3577,15 @@ input[type='checkbox']:checked
     width: 60vw;
     height: 279.27px;
   }
+
   .G-wrap {
     display: flex;
-    height: 100vh;
+    height: 70vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0;
+    padding-bottom: 10vh;
   }
   .g-wrap {
     width: 90%;
@@ -3482,21 +3599,24 @@ input[type='checkbox']:checked
   .g-wrap .text {
     margin-left: 3vw;
   }
+  .g-wrap h3 {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
 
   .apply-button.graph-apply-button {
     display: flex;
   }
   .graph__wrap {
     display: grid;
-    height: 50vh;
+    height: 40vh;
     grid-template-columns: 1.5fr 0.67fr 1.5fr 0.3fr 1fr;
-    grid-template-rows: 10% 10% 20% 20% 20%;
+    grid-template-rows: 10% 20% 20% 20%;
     grid-template-areas:
       'l . . . .'
       'm1 g1 g1 . . '
       'm2 g2 g2 g2 g2'
-      'bt des des des des'
-      'gab gab gab gab gab';
+      'bt des des des des';
   }
 
   .g-wrap p {
@@ -3520,6 +3640,7 @@ input[type='checkbox']:checked
   }
   .brand_branding {
     padding: 0 10% 0 10%;
+    height: auto;
   }
   .brand_branding__title {
     display: flex;
@@ -3528,14 +3649,12 @@ input[type='checkbox']:checked
     align-items: flex-start;
     margin-left: 0%;
     word-break: keep-all;
-    width: 80%;
+    width: 80vw;
   }
   .brand_branding__title h3 {
     margin-bottom: 3rem;
     width: auto;
-    font-size: 5rem;
-    line-height: 6rem;
-    width: 90%;
+    width: 70%;
   }
 
   .brand_branding__title span {
@@ -3544,14 +3663,14 @@ input[type='checkbox']:checked
     font-size: 2.5rem;
   }
   .box_container {
-    height: 50vh;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     width: 80%;
     flex-direction: column;
   }
   .box {
-    height: 10vh;
+    height: 5vh;
     color: white;
     opacity: 0.52;
     background-color: #5bd8fe;
@@ -3566,7 +3685,7 @@ input[type='checkbox']:checked
     display: none;
   }
   .brand_branding__link {
-    height: 20%;
+    height: auto;
   }
   .brand_branding__button {
     height: 0;
@@ -3691,8 +3810,7 @@ input[type='checkbox']:checked
   .application_acceptance__info h3 {
     height: auto;
     margin: 0 2rem 4rem 0.25rem;
-    font-size: 5rem;
-    line-height: 6rem;
+
     width: 50vw;
     /*font-size: 2.938rem;*/
   }
@@ -4157,8 +4275,7 @@ input[type='checkbox']:checked
   .brand_branding__title h3 {
     margin-bottom: 3rem;
     width: auto;
-    font-size: 5rem;
-    line-height: 6rem;
+
     width: 90%;
   }
 
@@ -4314,8 +4431,7 @@ input[type='checkbox']:checked
   .application_acceptance__info h3 {
     height: auto;
     margin: 0 2rem 4rem 0.25rem;
-    font-size: 5rem;
-    line-height: 6rem;
+
     width: 50vw;
     /*font-size: 2.938rem;*/
   }
@@ -4544,8 +4660,7 @@ input[type='checkbox']:checked
   .application_acceptance__info h3 {
     height: auto;
     margin: 0 2rem 4rem 0.25rem;
-    font-size: 5rem;
-    line-height: 6rem;
+
     width: 50vw;
     /*font-size: 2.938rem;*/
   }
@@ -4774,8 +4889,6 @@ input[type='checkbox']:checked
     margin: 0 0;
   }
   h3 {
-    font-size: 5rem;
-    line-height: 6rem;
   }
   p {
     font-size: 14px;
@@ -5192,8 +5305,7 @@ input[type='checkbox']:checked
   .application_acceptance__info h3 {
     height: auto;
     margin: 0 2rem 4rem 0.25rem;
-    font-size: 5rem;
-    line-height: 6rem;
+
     width: 50vw;
   }
   .application_acceptance__info p {
@@ -5414,8 +5526,6 @@ input[type='checkbox']:checked
     margin: 0;
   }
   h3 {
-    font-size: 5rem;
-    line-height: 6rem;
   }
   p {
     font-size: 14px;
@@ -5842,8 +5952,7 @@ input[type='checkbox']:checked
   .application_acceptance__info h3 {
     height: auto;
     margin: 0 2rem 4rem 0.25rem;
-    font-size: 5rem;
-    line-height: 6rem;
+
     width: 50vw;
   }
   .application_acceptance__info p {

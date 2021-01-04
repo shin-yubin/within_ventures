@@ -1731,6 +1731,14 @@ input[type='checkbox']:checked
   .brand_branding__title span {
     width: 50vw;
   }
+  .move-in-procedure__icon--wrap img {
+    width: 70vw;
+    height: 204.8px;
+  }
+  .partnership__icon--wrap img {
+    width: 70vw;
+    height: 490.53px;
+  }
 }
 
 /* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
@@ -1987,7 +1995,9 @@ input[type='checkbox']:checked
     width: 100vw;
     display: flex;
     justify-content: center;
+    margin: 20vh;
   }
+
   .application_acceptance__button
     button {
     width: 20rem;
