@@ -2023,6 +2023,7 @@ input[type='checkbox']:checked
 
 /* 모바일 세로, 테블릿 세로 (해상도 ~ 479px)*/
 @media all and (max-width: 479px) {
+  
   html {
     font-size: 5px;
   }
@@ -2130,18 +2131,17 @@ input[type='checkbox']:checked
   .header__descripton-button button {
     width: 15rem;
     height: 7rem;
-
     font-size: 2.5rem;
   }
   .header__descripton p {
     color: black;
   }
+
   .brand_identity__container {
     width: 70%;
     margin-right: 30%;
     padding-left: 5%;
   }
-
   .brand__recruitment--container {
     overflow: visible;
     display: flex;
